@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<title>Javascript Date Picker Wizard</title>
+
+ <meta name="keywords" content="dhtml tools,javascript,DHTML Tools,Javascript,ajax,AJAX,Ajax,ajax tools,AJAX Tools,tools controls,simple javascript tools">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <META Name="Robots" Content="index,follow">
+ <META Name="Googlebot" Content="index,follow">
+ <META http-equiv="Pragma" content="no-cache">
+
+<link href="./css/zpcal.css" rel="stylesheet" type="text/css">
+<link href="./css/template.css" rel="stylesheet" type="text/css">
+
+
+<link rel="SHORTCUT ICON" href="http://www.zapatec.com/website/main/favicon.ico">
+
+
+<!-- import the calendar script -->
+<link rel="stylesheet" type="text/css" href="../themes/wood.css" />
+<link rel="stylesheet" type="text/css" href="../themes/fancyblue.css" />
+<link rel="stylesheet" type="text/css" href="../themes/forest.css" />
+<link rel="stylesheet" type="text/css" href="../themes/aqua.css" />
+<link rel="stylesheet" type="text/css" href="../themes/winxp.css" />
+<link rel="stylesheet" type="text/css" href="../themes/green.css" />
+<link rel="stylesheet" type="text/css" href="../themes/maroon.css" />
+<link rel="stylesheet" type="text/css" href="../themes/yellow.css" />
+<link rel="stylesheet" type="text/css" href="../themes/greengrass.css" />
+<link rel="stylesheet" type="text/css" href="../themes/win2k.css" />
+<link rel="stylesheet" type="text/css" href="../themes/bluexp.css" />
+<link rel="stylesheet" type="text/css" href="../themes/winter.css" />
+<link rel="stylesheet" type="text/css" href="../themes/system.css" />
+
+<style type="text/css">
+/*
+override the definition in template.css
+*/
+body { width:100%;}
+</style>
+
+<!-- import the calendar script -->
+<script type="text/javascript" src="../../utils/zapatec.js"></script>
+<script type='text/javascript' src='../../utils/zpdict.js'></script>
+<script type="text/javascript" src="../../utils/lang/zpdate-en.js"></script>
+<script type="text/javascript" src="../../utils/zpdate.js"></script>
+<script type="text/javascript" src="../src/calendar.js"></script>
+<script type="text/javascript" src="../../zptooltip/src/zptooltip.js"></script>
+<link rel="stylesheet" type="text/css" href="../../zptooltip/themes/default.css" />
+
+
+<!-- import the language module -->
+<script type="text/javascript" src="../lang/calendar-ro.js"></script>
+<script type="text/javascript" src="../lang/calendar-it.js"></script>
+<script type="text/javascript" src="../lang/calendar-de.js"></script>
+<script type="text/javascript" src="../lang/calendar-fr.js"></script>
+<script type="text/javascript" src="../lang/calendar-da.js"></script>
+<script type="text/javascript" src="../lang/calendar-du.js"></script>
+<script type="text/javascript" src="../lang/calendar-no.js"></script>
+<script type="text/javascript" src="../lang/calendar-ru.js"></script>
+<script type="text/javascript" src="../lang/calendar-sp.js"></script>
+<script type="text/javascript" src="../lang/calendar-el.js"></script>
+<script type="text/javascript" src="../lang/calendar-cs.js"></script>
+<script type="text/javascript" src="../lang/calendar-hr.js"></script>
+<script type="text/javascript" src="../lang/calendar-big5.js"></script>
+<script type="text/javascript" src="../lang/calendar-jp.js"></script>
+<script type="text/javascript" src="../lang/calendar-ko.js"></script>
+<script type="text/javascript" src="../lang/calendar-tr.js"></script>
+<script type="text/javascript" src="../lang/calendar-he.js"></script>
+<script type="text/javascript" src="../lang/calendar-ua.js"></script>
+
+<!-- other languages might be available in the lang directory; please check
+your distribution archive. -->
+<script type="text/javascript">
+<!--
+
+var oldLink = null;
+// code to change the active stylesheet
+function setActiveStyleSheet(link, title) {
+  var i, a, main;
+  for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+    if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
+      a.disabled = true;
+      if(a.getAttribute("title") == title) a.disabled = false;
+    }
+  }
+  if (oldLink) oldLink.style.fontWeight = 'normal';
+  oldLink = link;
+  link.style.fontWeight = 'bold';
+  return false;
+}
+
+// Zoom in IE
+Zapatec.Utils.addEvent(document, "mousewheel", new Function ("Zapatec.Calendar.zoomElement(window.event,'zooming')"));
+-->
+</script>
+
+
+
+<!--
+end of header with javascript and CSS specific  to the calendar
+-->
+
+
+
+<script type="text/javascript" src="../wizard/wizard.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="../wizard/wizard.css">
+</head>
+<body>

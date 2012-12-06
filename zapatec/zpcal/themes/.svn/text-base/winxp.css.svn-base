@@ -1,0 +1,398 @@
+/* $Id*/
+
+.zpCalendarWinxp table {
+  border: 1px solid;
+  font-size: 11px;
+  cursor: default;
+  font-family: tahoma,verdana,sans-serif;
+}
+
+.zpCalendarWinxp {
+  z-index: 100;
+  position: relative;
+  display: none;
+  border: 2px solid;
+  font-size: 11px;
+  cursor: default;
+  font-family: tahoma,verdana,sans-serif;
+}
+
+/* Header part -- contains navigation buttons and day names. */
+
+.zpCalendarWinxp .button { /* "<<", "<", ">", ">>" buttons have this class */
+  text-align: center;
+  padding: 1px;
+  border: 1px solid;
+}
+
+.zpCalendarWinxp .nav {
+  background: url("menuarrow.gif") no-repeat 100% 100%;
+}
+
+.zpCalendarWinxp thead .title { /* This holds the current "month, year" */
+  font-weight: bold;
+  padding: 1px;
+  border: 1px solid;
+  text-align: center;
+}
+
+.zpCalendarWinxp thead .headrow { /* Row <TR> containing navigation buttons */
+}
+
+.zpCalendarWinxp thead .daynames { /* Row <TR> containing the day names */
+}
+
+.zpCalendarWinxp thead .name { /* Cells <TD> containing the day names */
+  border-bottom: 1px solid;
+  padding: 2px;
+  text-align: center;
+}
+
+.zpCalendarWinxp thead .weekend { /* How a weekend day name shows in header */
+}
+
+.zpCalendarWinxp thead .hilite { /* How do the buttons in header appear when hover */
+  border: 2px solid;
+  padding: 0px;
+}
+
+.zpCalendarWinxp thead .active { /* Active (pressed) buttons in header */
+  padding: 2px 0px 0px 2px;
+  border: 1px solid;
+}
+
+/* The body part -- contains all the days in month. */
+
+.zpCalendarWinxp tbody .day { /* Cells <TD> containing month days dates */
+  width: 2em;
+  text-align: right;
+  padding: 2px 4px 2px 2px;
+}
+.zpCalendarWinxp tbody .day.othermonth {
+  font-size: 80%;
+}
+.zpCalendarWinxp tbody .day.othermonth.oweekend {
+}
+
+.zpCalendarWinxp table .wn {
+  padding: 2px 3px 2px 2px;
+  border-right: 1px solid;
+}
+
+.zpCalendarWinxp tbody .rowhilite td {
+}
+
+.zpCalendarWinxp tbody .rowhilite td.wn {
+}
+
+.zpCalendarWinxp tbody td.hilite { /* Hovered cells <TD> */
+  padding: 1px 3px 1px 1px;
+  border: 1px solid;
+}
+
+.zpCalendarWinxp tbody td.active { /* Active (pressed) cells <TD> */
+  padding: 2px 2px 0px 2px;
+  border: 1px solid;
+}
+
+.zpCalendarWinxp tbody td.selected { /* Cell showing selected date */
+  font-weight: bold;
+  border: 1px solid;
+  padding: 2px 2px 0px 0px;
+}
+
+.zpCalendarWinxp tbody td.weekend { /* Cells showing weekend days */
+}
+
+.zpCalendarWinxp tbody td.today { /* Cell showing today date */
+  font-weight: bold;
+}
+
+.zpCalendarWinxp tbody .disabled {
+  color: #999;
+} /* let's suppose this is a right default for the "disabled" items */
+
+.zpCalendarWinxp tbody .emptycell { /* Empty cells (the best is to hide them) */
+  visibility: hidden;
+}
+
+.zpCalendarWinxp tbody .emptyrow { /* Empty row (some months need less than 6 rows) */
+  display: none;
+}
+
+/* The footer part -- status bar and "Close" button */
+
+.zpCalendarWinxp tfoot .ttip { /* Tooltip (status bar) cell <TD> */
+  padding: 1px;
+  border: 1px solid;
+  text-align: center;
+}
+
+.zpCalendarWinxp tfoot .ttip .error {
+  color: #c20;
+}
+
+.zpCalendarWinxp tfoot tr.time td {
+  padding: 0;
+  border-top: 1px solid;
+}
+
+.zpCalendarWinxp tfoot tr.time td.timetext {
+  text-align: center;
+}
+
+.zpCalendarWinxp tfoot tr.time table td {
+  border: 0;
+  padding: 0;
+}
+
+.zpCalendarWinxp tfoot tr.time td.hilite,
+.zpCalendarWinxp tfoot tr.time td.active {
+  border: 0;
+  padding: 0;
+}
+
+.zpCalendarWinxp tfoot tr.time td.hour,
+.zpCalendarWinxp tfoot tr.time td.minute {
+  text-align: right; font-weight: bold;
+  border-right: 1px solid; padding: 0 1px 0 3px;
+}
+
+.zpCalendarWinxp tfoot tr.time td.colon {
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+}
+
+.zpCalendarWinxp tfoot tr.time td.ampm {
+  text-align: center;
+}
+
+/*
+.zpCalendarWinxp tfoot tr.time td.parent-hour table { position: relative; left: .7em; z-index: 10; empty-cells: visible; }
+.zpCalendarWinxp tfoot tr.time td.parent-minute table { position: relative; left: -.7em; z-index: 10; }
+*/
+
+
+.zpCalendarWinxp tfoot .footrow { /* The <TR> in footer (only one right now) */
+}
+
+
+.zpCalendarWinxp .calendar-time-scroller {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.zpCalendarWinxp .calendar-time-scroller .up {
+  width: 11px;
+  background: transparent url("scroller-up.gif") no-repeat 50% 50%;
+  height: 0.5em;
+/*  font-size: 1px; */
+}
+
+.zpCalendarWinxp .calendar-time-scroller .down {
+  width: 11px;
+  background: transparent url("scroller-down.gif") no-repeat 50% 50%;
+  height: 0.5em;
+/*  font-size: 1px; */
+}
+
+
+/* Combo boxes (menus that display months/years for direct selection) */
+
+.zpCalendarWinxp .combo {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 4em;
+  cursor: default;
+  border: 1px solid;
+  font-size: 90%;
+  padding: 1px;
+}
+
+.zpCalendarWinxp .combo .label,
+.zpCalendarWinxp .combo .label-IEfix {
+  text-align: center;
+  padding: 1px;
+}
+
+.zpCalendarWinxp .combo .label-IEfix {
+  width: 4em;
+}
+
+.zpCalendarWinxp .combo .disabled {
+  color: #888;
+}
+
+.zpCalendarWinxp .combo .active {
+  padding: 0px;
+  border: 1px solid;
+}
+
+.zpCalendarWinxp .history {
+  width: 18em;
+}
+
+.zpCalendarWinxp .history .label {
+  text-align: center;
+}
+
+.zpCalendarWinxp .history .label-IEfix {
+  width: 18em;
+}
+
+.zpCalendarWinxp .zpCalDayInfo {
+  background-color: yellow;
+  font-size: 80%;
+}
+
+.zpCalendarWinxp .zpCalSpecialDay {
+  background-color: #cccccc;
+}
+
+
+.zpCalendarWinxp {
+  border-color: #efebde #736d63 #736d63 #efebde;
+  border-width: 1px;
+  color: #000;
+  background-color: #efebde;
+}
+
+.zpCalendarWinxp table {
+  border-color: #fff #adaa9c #adaa9c #fff;
+}
+
+/* Header part -- contains navigation buttons and day names. */
+
+.zpCalendarWinxp .button { /* "<<", "<", ">", ">>" buttons have this class */
+  border-color: #fff #adaa9c #adaa9c #fff;
+}
+
+.zpCalendarWinxp thead .title { /* This holds the current "month, year" */
+  border: none;
+  background-color: #8f8b7e;
+  color: #fff;
+}
+
+.zpCalendarWinxp thead .headrow { /* Row <TR> containing navigation buttons */
+}
+
+.zpCalendarWinxp thead .daynames { /* Row <TR> containing the day names */
+}
+
+.zpCalendarWinxp thead .name { /* Cells <TD> containing the day names */
+  border-color: #000;
+  background-color: #f4f0e8;
+}
+
+.zpCalendarWinxp thead .weekend { /* How a weekend day name shows in header */
+  color: #f00;
+}
+
+.zpCalendarWinxp thead .hilite,
+.zpCalendarWinxp tbody .hilite,
+.zpCalendarWinxp tfoot .hilite { /* How do the buttons in header appear when hover */
+  border-color: #fff #adaa9c #adaa9c #fff;
+  background-color: #fffbfe;
+}
+
+.zpCalendarWinxp thead .active { /* Active (pressed) buttons in header */
+  padding: 2px 0px 0px 2px;
+  border-color: #adaa9c #fff #fff #adaa9c;
+  background-color: #dfdbce;
+}
+
+/* The body part -- contains all the days in month. */
+
+.zpCalendarWinxp tbody .day { /* Cells <TD> containing month days dates */
+}
+.zpCalendarWinxp tbody .day.othermonth {
+  color: #888;
+}
+.zpCalendarWinxp tbody .day.othermonth.oweekend {
+  color: #e88;
+}
+
+.zpCalendarWinxp table .wn {
+  border-color: #8f8b7e;
+  background-color: #f4f0e8;
+  color: #6f6b5e;
+}
+
+.zpCalendarWinxp tbody .rowhilite td {
+  background-color: #f4f0e8;
+}
+
+.zpCalendarWinxp tbody .rowhilite td.wn {
+  background-color: #efebde;
+  color: #000;
+}
+
+.zpCalendarWinxp tbody td.hilite { /* Hovered cells <TD> */
+  border-color: #fff #adaa9c #adaa9c #fff;
+}
+
+.zpCalendarWinxp tbody td.active { /* Active (pressed) cells <TD> */
+  border-color: #adaa9c #fff #fff #adaa9c;
+}
+
+.zpCalendarWinxp tbody td.selected { /* Cell showing selected date */
+  border-color: #adaa9c #fff #fff #adaa9c;
+  background-color: #fffbee;
+}
+
+.zpCalendarWinxp tbody td.weekend { /* Cells showing weekend days */
+  color: #f00;
+}
+
+.zpCalendarWinxp tbody td.today { /* Cell showing today date */
+  color: #00f;
+}
+
+.zpCalendarWinxp tbody .disabled { color: #999; }
+
+/* The footer part -- status bar and "Close" button */
+
+.zpCalendarWinxp tfoot .ttip { /* Tooltip (status bar) cell <TD> */
+  border-color: #adaa9c #fff #fff #adaa9c;
+  color: #000;
+  font-size: 90%;
+}
+
+.zpCalendarWinxp tfoot .active { /* Active (pressed) style for buttons in footer */
+  border-color: #000 #fff #fff #000;
+}
+
+/* Combo boxes (menus that display months/years for direct selection) */
+
+.zpCalendarWinxp .combo {
+  border-color: #fff #adaa9c #adaa9c #fff;
+  background-color: #efebde;
+}
+
+.zpCalendarWinxp .combo .active {
+  background-color: #dfdbce;
+  border-color: #adaa9c #fff #fff #adaa9c;
+}
+
+.zpCalendarWinxp .combo .hilite {
+  background-color: #0041ac;
+  color: #fff;
+}
+
+.zpCalendarWinxp .month-left-border { /* Divider line between two monthes */
+  border-left:1px solid #ADAA9C;
+}
+
+
+/* time */
+
+.zpCalendarWinxp tfoot tr.time td { border-color: #8f8b7e; }
+.zpCalendarWinxp tfoot tr.time table td { background-color: #efebde; }
+.zpCalendarWinxp tfoot tr.time td.hour,
+.zpCalendarWinxp tfoot tr.time td.minute { border-color: #cdcabc; background-color: #fffbee; }
+.zpCalendarWinxp tfoot tr.time td.hilite { background-color: #8cf; }
+.zpCalendarWinxp tfoot tr.time td.active { background-color: #48f; }
+.zpCalendarWinxp .calendar-time-scroller { border-color: #adaa9c; }

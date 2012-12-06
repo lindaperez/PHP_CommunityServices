@@ -1,0 +1,11 @@
+/* $Id: tiny.css 8381 2007-10-02 13:17:17Z nmaxim $ */
+.zpCalendarTiny {
+  border-width: 1px !important;
+  font-size: 8px !important;
+}
+
+.zpCalendarTiny table {
+  font-size: 8px !important;
+}
+
+.zpCalendarTiny tbody .day { width: 1.5em !important; }

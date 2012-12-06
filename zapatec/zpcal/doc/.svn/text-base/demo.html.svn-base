@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<title>AJAX Calendar</title>
+
+ <meta name="description" content="">
+
+ <meta name="keywords" content="ajax, dhtml, javascript, html, css">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <META Name="Robots" Content="index,follow">
+ <META Name="Googlebot" Content="index,follow">
+ <META http-equiv="Pragma" content="no-cache">
+
+ <link href="../../website/css/zpcal.css" rel="stylesheet" type="text/css">
+ <link href="../../website/css/template.css" rel="stylesheet" type="text/css">
+
+ <link rel="SHORTCUT ICON" href="../../website/images/favicon.ico">
+
+ <script type='text/javascript' src='../../utils/zapatec.js'></script>
+ <script type="text/javascript" src="../../utils/dhelp/src/zptabs.js"></script>
+ <script type="text/javascript" src="../../utils/dhelp/src/tree.js"></script>
+ <script type="text/javascript" src="../../utils/dhelp/src/demo.js"></script>
+
+
+</head>
+<body style="width: 1010px;">
+  <!-- Left - Start -->
+<div class="leftSide-static">
+ 	<a href='http://www.zapatec.com' style='cursor:hand' title='Zapatec 866-522-7941 Bringing the Desktop Experience To Your Browser '>
+	<div class="pageImage"></div>
+	</a>
+	<div style='text-align:center; color:red'>866-522-7941</div>
+	<div class="leftBGTab">
+		<div class="leftTab">
+			<strong>Zapatec Calendar</strong>
+		</div>
+	</div>
+    <ul id="tree">
+        <li><a href="index.html" class="lnksubpage" title='Zapatec Javascript Tree Overview'>Overview</a></li>
+	    <li><a href="features.html" class="lnksubpage" title='Zapatec Javascript Tree Features'>Features</a></li>
+	    <li id="zpcal">&nbsp;Demos</li>
+	    <li><a href="wizard.html" class="lnksubpage" title='Zapatec Javascript Tree Wizard'>Wizard</a></li>
+	    <li><a href="docs.html" class="lnksubpage" title='Zapatec Javascript Tree Manual'>Manual</a></li>
+	    <li><a href="codedoc.html" class="lnksubpage" title='Zapatec Javascript Tree Code Documentation'>Code Documentation</a></li>
+	    <li><a href="license.html" class="lnksubpage" title='Zapatec Javascript Tree License'>License</a></li>
+	    <li><a href="http://www.zapatec.com/zadmin/buy.jsp" class="lnksubpage" title='Zapatec Javascript Tree Buy'>Buy</a></li>
+    </ul>
+</div>
+<!-- Left - End -->
+
+<!-- start - Right Page content -->
+		<div class="rightSide-static">
+
+			<div class="frameContent">
+				<div class="pageContent" style="width: 800px;">
+					<!-- Definition of the Tabs Container and TabBar -->
+					<div id="tabs_content" style="display : none;">
+						<div id="tabBar" style="width: 400px"></div>
+						
+						<div id="tabs" style="width : 810px;">
+							<textarea id="html_source" style="width : 1024px; height : 500px;"></textarea>
+							<textarea id="css_source" style="width : 1024px; height : 500px;"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			Zapatec.DemoExplorer.demoData['zpcal'] = {
+				name: 'Calendar',
+				data: {"children": [{"children": [{"attributes": {"themes": ["aqua"], "demo": "example1.html"}, "label": "Basic Calendar, Single Click"}, {"attributes": {"themes": ["bluexp"], "demo": "example2.html"}, "label": "Double Click, with Time"}, {"attributes": {"themes": ["fancyblue"], "demo": "example3.html"}, "label": "Single Click, Use an Icon, Disable Weekend Days"}, {"attributes": {"themes": ["forest"], "demo": "example4.html"}, "label": "Single Click, Different Alignment"}, {"attributes": {"themes": ["winxp"], "demo": "example91.html"}, "label": "Saving Dates in Cookies"}, {"attributes": {"themes": ["wood"], "demo": "example92.html"}, "label": "Limit Time and Day Selection"}, {"attributes": {"themes": ["winter"], "demo": "example9.html"}, "label": "Update Drop-down Menus from a Calendar"}], "label": "Basic"}, {"children": [{"attributes": {"themes": ["bluexp"], "demo": "dow.html"}, "label": "Day of Week Selection"}, {"attributes": {"themes": ["green"], "demo": "example5.html"}, "label": "Flat Calendar, Different Look for Special Days"}, {"attributes": {"themes": ["greengrass"], "demo": "example6.html"}, "label": "Flat Calendar, Extra Information for Special Days."}, {"attributes": {"themes": ["yellow"], "demo": "example93.html"}, "label": "Select Multiple Days in a Flat Calendar"}, {"attributes": {"themes": ["none"], "demo": "example95.html"}, "label": "Six Month Calendar"}, {"attributes": {"themes": ["bluexp"], "demo": "specialdays.html"}, "label": "Special Days"}], "label": "Flat"}, {"children": [{"attributes": {"themes": ["bluexp"], "demo": "example2.html"}, "label": "Double Click, with Time"}, {"attributes": {"themes": ["none"], "demo": "example96.html"}, "label": "Time Interval Calendar"}], "label": "Show Time"}, {"children": [{"attributes": {"themes": ["fancyblue"], "demo": "example3.html"}, "label": "Single Click, Use an Icon, Disable Weekend Days"}], "label": "Limit Dates"}, {"children": [{"attributes": {"themes": ["bluexp"], "demo": "dow.html"}, "label": "Day of Week Selection"}, {"attributes": {"themes": ["maroon"], "demo": "example94.html"}, "label": "Two Month Calendar"}, {"attributes": {"themes": ["none"], "demo": "example95.html"}, "label": "Six Month Calendar"}, {"attributes": {"themes": ["bluexp"], "demo": "specialdays.html"}, "label": "Special Days"}], "label": "Multiple Month"}, {"children": [{"attributes": {"themes": ["bluexp"], "demo": "dow.html"}, "label": "Day of Week Selection"}, {"attributes": {"themes": ["maroon"], "demo": "example7.html"}, "label": "Choose Multiple Days"}, {"attributes": {"themes": ["yellow"], "demo": "example93.html"}, "label": "Select Multiple Days in a Flat Calendar"}], "label": "Select Multiple Dates"}, {"children": [{"attributes": {"themes": ["win2k"], "demo": "example81.html"}, "label": "Two Coordinated Dates Highlight the Dates in Between"}, {"attributes": {"themes": ["system"], "demo": "example8.html"}, "label": "Two Coordinated Dates"}], "label": "Reservation"}, {"children": [{"attributes": {"themes": ["green"], "demo": "example5.html"}, "label": "Flat Calendar, Different Look for Special Days"}, {"attributes": {"themes": ["greengrass"], "demo": "example6.html"}, "label": "Flat Calendar, Extra Information for Special Days."}, {"attributes": {"themes": ["bluexp"], "demo": "specialdays.html"}, "label": "Special Days"}], "label": "Special Days"}]}
+			};
+
+			zpDemo = new Zapatec.DemoExplorer({
+				showFirstDemo: true,
+				currentWidget: 'zpcal'
+			});
+		</script>
+</body>
+</html>
+

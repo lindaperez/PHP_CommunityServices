@@ -1,0 +1,329 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<title>DHTML Calendar by zapatec.com</title>
+
+ <meta name="description" content="Zapatec Javascript Calendar  is an attractive, feature-full, cross-browser compatible, calendar. It comes with the  Calendar Wizard  which helps you create a great looking calendar that makes choosing a date effortless for your users.">
+
+ <meta name="keywords" content="dhtml calendar,javascript,DHTML Calendar,Javascript,ajax,AJAX,Ajax,ajax calendar,AJAX Calendar,calendar controls,simple javascript calendar,calendar plugins,calendar tools">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <META Name="Robots" Content="index,follow">
+ <META Name="Googlebot" Content="index,follow">
+ <META http-equiv="Pragma" content="no-cache">
+
+	
+<link href="../../website/css/zpcal.css" rel="stylesheet" type="text/css">
+<link href="../../website/css/template.css" rel="stylesheet" type="text/css">
+
+
+<link rel="SHORTCUT ICON" href="../../website/favicon.ico">
+
+
+
+</head>
+<body>
+
+
+
+
+
+		<!-- Left - Start -->
+<div class="leftSide-static">
+	<a href='http://www.zapatec.com' style='cursor:hand' title='Zapatec 866-522-7941 Bringing the Desktop Experience To Your Browser '>
+	<div class="pageImage"></div>
+	</a>
+	<div style='text-align:center; color:red'>866-522-7941</div>
+	<div class="leftBGTab">
+		<div class="leftTab">
+			<strong>Zapatec Calendar</strong>
+		</div>
+	</div>
+
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Javascript Calendar Point arrow'  src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="index.html" class="lnksubpage" title='Zapatec AJAX Javascript Calendar Overview'>Overview</a></div></div>
+
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Javascript Calendar Point arrow'  src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="features.html" class="lnksubpage" title='Zapatec AJAX Javascript Calendar Features'>Features</a></div></div>
+
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Javascript Calendar Point arrow'  src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="demo.html" class="lnksubpage" title='Zapatec AJAX Javascript Calendar Demos'>Demos</a></div></div>
+
+	
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Javascript Calendar Point arrow'  src="./images/arrow-grey.gif">&nbsp;&nbsp;&nbsp;<a href="wizard.html" class="lnksubpage" title='Zapatec AJAX Javascript Calendar Wizard'>Wizard</a></div></div>
+	
+
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Javascript Calendar Point arrow'  src="./images/arrow-grey.gif">&nbsp;&nbsp;&nbsp;<a href="docs.html" class="lnksubpage" title='Zapatec AJAX Javascript Calendar Manual'>Manual</a></div></div>
+
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Javascript Calendar Point arrow'  src="./images/arrow-grey.gif">&nbsp;&nbsp;&nbsp;<a href="codedoc.html" class="lnksubpage" title='Zapatec AJAX Javascript Calendar Code Documentation'>Code Documentation</a></div></div>
+
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Javascript Calendar Point arrow'  src="./images/arrow-grey.gif">&nbsp;&nbsp;&nbsp;<a href="license.html" class="lnksubpage" title='Zapatec AJAX Javascript Calendar License'>License</a></div></div>
+
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Zapatec Buy'  src="./images/arrow-grey.gif">&nbsp;&nbsp;&nbsp;<a href="https://www.zapatec.com/zadmin/buy.jsp" class="lnksubpage" title='Zapatec AJAX Javascript Calendar Buy'>Buy</a></div></div>
+
+</div>
+<!-- Left - End -->
+
+<!-- start - Right Page content -->
+	<div class="rightSide-static">
+
+		<div class="frameContent">
+			<div class="pageContent">
+
+
+
+
+
+
+
+
+<center>
+<a href="./products/eventscalendar/index.jsp" >
+<img height='70px' src="./images/newEcal.jpg" border='0' alt="Zapatec Calendar">
+</a>
+</center>
+
+
+
+<img src="./images/calwood138.jpg"  alt='calendar image' style='float:right; margin-left:1em;' border=1>
+
+<div class='zpCalHeader'>The Zapatec Javascript Calendar Features</div>
+
+
+<div class='zpCalSubheader'>General Features</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Supported on a Wide Variety of Browsers</strong><br>
+	The Zapatec Javascript Calendar has been tested on Internet Explorer 6.0+,
+	Opera 9.0+, Firefox 1.0+, Safari 2.0+.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Unique Wizard to Setup and Check Features</strong><br>
+	Use the Zapatec <strong>Javascript Calendar Wizard</strong> to create a calendar with the exact features you want.
+	Once you are done, click <strong> generate </strong> and then you can cut and paste the generated code into 
+	your web page.<br/>
+	You can also use the Wizard to try out different configuration options and to choose the look you like and
+	the functionality you need.
+</div>
+
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Supports History of the Last Ten Choices</strong><br>
+	The Zapatec Javascript Calendar remembers your users' last ten selections and lets them return to pick among them.
+</div>
+
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Keyboard Shortcuts</strong><br>
+	For web-based application in which your users needs to enter dates frequently,
+	keyboard shortcuts make navigation fast and easy.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Tooltips</strong><br>
+	Tooltips on the status bar of the Zapatec Javascript Calendar help users become familiar with the different functions of the calendar.
+</div>
+
+
+
+<div class='zpCalSubheader'>Customization Features</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Multiple Months</strong>
+	<img src="../doc/images/new.gif"  align='middle' style='padding-left:1em ' alt='New'>
+	<br>
+	Set the number of months the calendar displays with the following options.
+	<ul>
+		<li> Choose the number of months, up to twelve, in your calendar. 
+		</li>
+		<li> Choose the number of months in a row. For instance, if you specify six months, you can show
+		three rows of two months, two rows of three months or one row of six months. 
+		</li>
+		<li>Choose the orientation of the month display. This determinew if the months will 
+		flow left to right first or top to bottom. 
+	 	</li>
+		</ul>
+
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Customize the Appearance</strong><br>
+	Customize the Zapatec Calendar for your site. We include a wide array of
+	themes, many different colors, and a variety of backgrounds to choose from, making
+	the calendar as attractive as it is convenient.
+
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Choose Between a Flat and a Popup Calendar</strong><br>
+	A popup Zapatec Javascript Calendar acts as a date picker, usually in forms, letting your users select dates. 
+	A flat Zapatec Javascript Calendar displays as part of the page, and lets users either browse the Calendar for
+	information, or click a date which could trigger a server side event.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Disable Dates</strong><br>
+	You can disable certain dates so that the user cannot select them. These can be
+	weekend days, all dates prior to the current date, all dates after a certain date or other specific days. You can
+	even have two calendars tied together so that a "departure date" cannot be prior to a
+	"arrival date."
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Limit Times</strong><br>
+	You can disable time ranges so that the user can select only certain times. You can even have the
+	calendar allow certain times on specific days such as Monday to Friday 8:00AM to 
+	5:00PM and Saturday and Sunday 9:00 AM to 1:00 PM.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Activate From Button, Image or Area</strong><br>
+	You can trigger the activation of the Zapatec Javascript Calendar from a button, an image, or even an area of text in your page.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Enter Time as Well as Date</strong><br>
+	You can let the user enter a time as well as a date. Time can be
+	configured on either a 12 or 24 hour clock.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Generate USA, European style, or Other Dates</strong><br>
+	Flexible configuration results in fine-tuned control of the format of generated dates.
+	You can generate a day/month/two digit year, a month-day-four digit year, three-letter abbeviations for months, fully-spelled months, etc.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Choice of Languages</strong><br>
+	Choose from over twenty user-contributed LGPL calendar languages.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Choose First Day of the Week</strong><br>
+	Users can choose which day is the start of the week, and  the calendar remembers their
+	preferences for their future use.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Incremental Time</strong>
+	<img src="../doc/images/new.gif"  align='middle' style='padding-left:1em ' alt='New'>
+	<br/>
+	Force the user to pick a time only in specific increments. For instance they can only choose
+	appointments on the half hour.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Optionally Display Week Number</strong><br>
+	Display the week number in the left side of the calendar.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Mark Days as Special</strong><br>
+	Certain dates can be displayed differently. You can display
+	holidays in a different color.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Add Notes to Dates</strong><br>
+	You can add notes to specific dates.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Multiple Day Selection</strong><br>
+	You can let the user select multiple days.
+</div>
+
+
+
+
+<div class='zpCalSubheader'>Technical Features</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Object Oriented Javascript</strong><br>
+	The Zapatec Javscript Calendar is written in object-oriented javascript, making it easy to read and modify.
+</div>
+
+
+<div class='zpCalPoint'>
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Uses its Own Scope</strong><br>
+	The Javascript objects and properties are all in the "Zapatec" scope, ensuring that they will
+	not clash with any other Javascript variables you have in your page.
+</div>
+
+<div class='zpCalSubheader'>Other Features</div>
+
+<div class='zpCalPoint'>
+	<img class='zpCalPointBullet' alt='bullet' src="./images/box_blue.gif">
+	<strong>Tested and Full of Features</strong><br>
+	The Zapatec Javascript calendar is a commercial implementation of the open-source <a class='lnkblue' 
+	title="The Coolest DHTML  Calendar (opens new window)" target="_blank"
+	href='http://www.dynarch.com/projects/calendar/'>  Coolest DHTML Calendar </a> by Dynarch.  
+	We started with a popular and well-tested calendar and added many features, detailed 
+	documentation, a wizard and much more.
+
+</div>
+
+
+
+
+
+		
+		
+		<br>
+
+	
+
+		
+		<br>
+
+	
+
+
+
+	<div align=center> <br/><a href='http://www.6zap.com' class='lnkblue'>6zap</a> | <a href='http://www.zapatec.com/website/main/contact.jsp' class='lnkblue'>Contact Us</a> | <a href='http://www.zapatec.com/website/main/employment.jsp' class='lnkblue'>Employment</a><br/><br/>&copy; 2004-2009 <strong>Zapatec, Inc.</strong> </div>
+
+
+	
+		</div> <!-- end pageContent -->
+		</div> <!-- end frameContent -->
+		</div> <!-- end rightSide -->
+	
+
+
+
+</body>
+</html>
+

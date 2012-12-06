@@ -1,0 +1,71 @@
+<?
+require "cAutorizacion.php";
+
+$modo_depuracion=FALSE;
+
+//se insertan los datos de la inscripcion
+
+$sql_temp="INSERT INTO inscripcion VALUES(".
+"0, ".//id
+"'$_POST[mes_inicio]', ".
+"'$_POST[anio_inicio]', ".
+"'$_POST[mes_fin]', ".
+"'$_POST[anio_fin]', ".
+"'$_SESSION[USBID]', ".//usbid_estudiante
+"'$_POST[id_proy]', ".
+"'$_POST[objetivos]', ".
+"'$_POST[tutor]', ".//usbid del tutor
+"'',".//fecha_fin_real
+"''".//observaciones
+")";
+
+if ($modo_depuracion) echo "$sql_temp<br>";
+$resultado=ejecutarConsulta($sql_temp, $conexion);
+
+//se modifican los datos del estudiante: ci, email_sec, tlf_hab, tlf_cel, dir
+$sql="UPDATE usuario_estudiante SET ".
+"email_sec='$_POST[email_sec]', ".
+"telf_hab='$_POST[tlf_hab]', ".
+"telf_cel='$_POST[tlf_cel]', ".
+"dirreccion='$_POST[dir]', ".
+"WHERE usbid_usuario='$_SESSION[USBID]'".;
+
+if ($modo_depuracion) echo "$sql_temp<br>";
+$resultado=ejecutarConsulta($sql_temp, $conexion);
+
+//la cedula esta en la tabla usuario
+$sql_temp="UPDATE usuario SET ".
+"ci='$_POST[ci]' ".
+"WHERE usbid_usuario='$_SESSION[USBID]'".;
+
+if ($modo_depuracion) echo "$sql_temp<br>";
+$resultado=ejecutarConsulta($sql_temp, $conexion);
+
+//se obtiene el último id_inscripcion insertado
+
+$sql_temp="SELECT max(id) as id FROM inscripcion";
+if ($modo_depuracion) echo "$sql_temp<br>";
+
+$resultado=ejecutarConsulta($sql_temp, $conexion);
+$fila=obtenerResultados($resultado);
+$id_ins=$fila[id];
+
+//se insertan los datos del plan de accion: actividad, cronograma y horas
+
+for ($i=0;$i<count($_POST[actividad];$i++){
+	$sql_temp="INSERT INTO plan_inscripcion VALUES(".
+	"'$id_ins', ".
+	"'$_POST[actividad][$i]', ".
+	"'$_POST[fecha][$i]', ".
+	"'$_POST[horas][$i]' ) ";
+
+}
+
+cerrarConexion($conexion);
+
+	?>
+	<script>
+	alert("El proyecto ha sido registrado satisfactoriamente.");
+	window.location="vListarOpciones.php";
+	</script>	
+

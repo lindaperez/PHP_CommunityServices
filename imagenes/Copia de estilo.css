@@ -1,0 +1,166 @@
+A.men_enlace1 {
+	color: #5a5960;
+	text-decoration: none;
+}
+A.men_enlace1:visited {
+	color: #5a5960;
+	text-decoration: none;
+}
+A.men_enlace1:active {
+	color: #5a5960;
+	text-decoration: none;
+}
+A.men_enlace1:hover {
+	text-decoration: none;
+	color: #5284BD;
+}
+A.men_enlace2 {
+	color: #5284BD;
+	text-decoration: none;
+	display: inline;
+	line-height: 13px;
+}
+A.men_enlace2:visited {
+	color: #5284BD;
+	text-decoration: none;
+}
+A.men_enlace2:active {
+	color: #5284BD;
+	text-decoration: none;
+}
+A.men_enlace2:hover {
+	text-decoration: underline;
+	color: #5284BD;
+}
+
+.puntos_v {
+	background-image:  url(file:///C|/Documents%20and%20Settings/administrator/Mis%20documentos/respaldo_28_06_05/proyectos_usb/servicios/images_ind/img/puntos.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+.puntos_h {
+	background-image:  url(file:///C|/Documents%20and%20Settings/administrator/Mis%20documentos/respaldo_28_06_05/proyectos_usb/servicios/images_ind/img/puntos_h.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+.puntos_h_t {
+	background-image:  url(file:///C|/Documents%20and%20Settings/administrator/Mis%20documentos/respaldo_28_06_05/proyectos_usb/servicios/images_ind/img/puntos_h.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+.puntos_v_l {
+	background-image:  url(file:///C|/Documents%20and%20Settings/administrator/Mis%20documentos/respaldo_28_06_05/proyectos_usb/servicios/images_ind/img/puntos.gif);
+	background-repeat: repeat-y;
+	background-position: left;
+}
+.textomenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #5A5960;
+	font-style: normal;
+	line-height: 16px;
+	font-weight: bolder;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
+}
+.punto_h_t_left {
+	background-image:  url(file:///C|/Documents%20and%20Settings/administrator/Mis%20documentos/respaldo_28_06_05/proyectos_usb/servicios/images_ind/img/puntos_h.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.punto_h_t_righ {
+
+	background-image:  url(file:///C|/Documents%20and%20Settings/administrator/Mis%20documentos/respaldo_28_06_05/proyectos_usb/servicios/images_ind/img/puntos_h.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.noticias {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #5284BD;
+}
+.borra {
+	height: 300px;
+	width: 200px;
+}
+.cuadro {
+	background-image:  url(file:///C|/Documents%20and%20Settings/administrator/Mis%20documentos/respaldo_28_06_05/proyectos_usb/servicios/images_ind/img/puntos_h.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-image: url(file:///C|/Documents%20and%20Settings/administrator/Mis%20documentos/respaldo_28_06_05/proyectos_usb/servicios/img/puntos_v.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.pie_pag {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #5284BD;
+	letter-spacing: 1px;
+}
+.direccion {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #999999;
+	letter-spacing: 1px;
+}
+.parrafo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #444444;
+	text-align: justify;
+}
+.textomenua {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #5286BF;
+	font-style: normal;
+	line-height: 16px;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
+}
+.telefonos {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	letter-spacing: 0px;
+	font-weight: bold;
+	color: #5A5960;
+}
+.buscador {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #666666;
+}
+.fond_buscar {
+	background-image: url(file:///C|/Documents%20and%20Settings/administrator/Mis%20documentos/respaldo_28_06_05/proyectos_usb/servicios/images_ind/principal_cambio_r2_c66.jpg);
+	background-repeat: no-repeat;
+}.titular {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #5284BD;
+}
+.titular_negro {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+.noti {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000099;
+}
+.rojo {
+	color: #FF0000;
+	font-weight: bold;
+}

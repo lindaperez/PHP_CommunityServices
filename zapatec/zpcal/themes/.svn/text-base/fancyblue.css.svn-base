@@ -1,0 +1,337 @@
+/* $Id*/
+
+
+.zpCalendarFancyblue table {
+  border: 1px solid;
+  font-size: 11px;
+  cursor: default;
+  font-family: tahoma,verdana,sans-serif;
+  border-color: #585858;
+  background: url("fancyblue/bg_body.gif") 100% 100%;
+}
+
+.zpCalendarFancyblue {
+  z-index: 100;
+  position: relative;
+  display: none;
+  border: 2px solid;
+  font-size: 11px;
+  cursor: default;
+  font-family: tahoma,verdana,sans-serif;
+  border-color: #585858;
+  border-width: 1px;
+  color: #000;
+}
+
+.zpCalendarFancyblue .nav {
+  background: url("menuarrow.gif") no-repeat 100% 100%;
+  background-color: #FFCC66;
+}
+
+/* Header part -- contains navigation buttons and day names. */
+
+.zpCalendarFancyblue .button { /* "<<", "<", ">", ">>" buttons have this class */
+  text-align: center;
+  padding: 1px;
+  border: 1px solid;
+  border-color: #696969 #CFAB1E #000000 #2E2E2E;
+  color: #000000;
+  background: #d9d2c9 url("fancyblue/bg_button.gif") 100% 100%;
+  border-top:2px solid #f2c823;
+}
+
+.zpCalendarFancyblue thead .title { /* This holds the current "month, year" */
+  font-weight: bold;
+  padding: 1px;
+  border: 1px solid;
+  text-align: center;
+  border-color: #737373 #400000 #000000 #2E2E2E;
+  background: url("fancyblue/bg_wn.gif") 100% 100%;
+  color: #fff;
+}
+
+.zpCalendarFancyblue thead .headrow { /* Row <TR> containing navigation buttons */
+
+}
+
+.zpCalendarFancyblue thead .daynames { /* Row <TR> containing the day names */
+
+}
+
+.zpCalendarFancyblue thead .name { /* Cells <TD> containing the day names */
+  border-bottom: 1px solid;
+  padding: 2px;
+  text-align: center;
+  border-color: #000;
+  background-color: #6A92A8;
+  color: #ffffff;
+}
+
+.zpCalendarFancyblue thead .weekend { /* How a weekend day name shows in header */
+  color: #f00;
+}
+
+.zpCalendarFancyblue thead .hilite { /* How do the buttons in header appear when hover */
+  border: 2px solid;
+  padding: 0px;
+  border-color: #696969 #CFAB1E #000000 #2E2E2E;
+  background-color: #B1783E;
+  color: #000000;
+  background: url("fancyblue/bg_button_hover.gif") 100% 100%;
+}
+
+.zpCalendarFancyblue thead .active { /* Active (pressed) buttons in header */
+  border: 1px solid;
+  padding: 2px 0px 0px 2px;
+  border-color: #404040 #d4d0c8 #d4d0c8 #404040;
+  background-color: #FF0303;
+}
+
+/* The body part -- contains all the days in month. */
+
+.zpCalendarFancyblue tbody .day { /* Cells <TD> containing month days dates */
+  width: 2em;
+  text-align: right;
+  padding: 2px 4px 2px 2px;
+}
+
+.zpCalendarFancyblue tbody .day.othermonth {
+  font-size: 80%;
+  color: #888;
+}
+
+.zpCalendarFancyblue tbody .day.othermonth.oweekend {
+  color: #e88;
+}
+
+.zpCalendarFancyblue table .wn {
+  padding: 2px 3px 2px 2px;
+  border-right: 1px solid;
+  border-color: #000000;
+  background-color: #6A92A8;
+  color: #ffffff
+}
+
+.zpCalendarFancyblue tbody .rowhilite td {
+  background-color: #A5C4D5;
+}
+
+.zpCalendarFancyblue tbody .rowhilite td.wn {
+  background: url("fancyblue/bg_wn.gif") 100% 100%;
+}
+
+.zpCalendarFancyblue tbody td.hilite { /* Hovered cells <TD> */
+  padding: 1px 3px 1px 1px;
+  border: 1px solid;
+  border-color: #F9EAD5 #675B4D #9C8A74 #F7E2C6;
+  background-color: #A1B3BC;
+}
+
+.zpCalendarFancyblue tbody td.active { /* Active (pressed) cells <TD> */
+  padding: 2px 2px 0px 2px;
+  border: 1px solid;
+  border-color: #404040 #d4d0c8 #d4d0c8 #404040;
+}
+
+.zpCalendarFancyblue tbody td.selected { /* Cell showing selected date */
+  font-weight: bold;
+  border: 1px solid;
+  padding: 2px 2px 0px 0px;
+  border-color: #404040 #d4d0c8 #d4d0c8 #404040;
+  background-color: #FFFBEF;
+  color: #000000;
+}
+
+.zpCalendarFancyblue tbody td.weekend { /* Cells showing weekend days */
+  color: #f00;
+}
+
+.zpCalendarFancyblue tbody td.today { /* Cell showing today date */
+  font-weight: bold;
+  color: #000000;
+}
+
+.zpCalendarFancyblue tbody .disabled {
+  color: #999;
+}
+
+.zpCalendarFancyblue tbody .emptycell { /* Empty cells (the best is to hide them) */
+  visibility: hidden;
+}
+
+.zpCalendarFancyblue tbody .emptyrow { /* Empty row (some months need less than 6 rows) */
+  display: none;
+}
+
+/* The footer part -- status bar and "Close" button */
+
+.zpCalendarFancyblue tfoot .footrow { /* The <TR> in footer (only one right now) */
+}
+
+.zpCalendarFancyblue tfoot .ttip { /* Tooltip (status bar) cell <TD> */
+  padding: 1px;
+  border: 1px solid;
+  text-align: center;
+  border-color:  #585858 #585858 #585858 #585858;
+  background: url("fancyblue/bg_wn.gif") 100% 100%;
+  color: #fff;
+}
+
+.zpCalendarFancyblue tfoot .hilite { /* Hover style for buttons in footer */
+  border-color: #404040 #d4d0c8 #d4d0c8 #404040;
+  background-color: #e4e0d8;
+}
+
+.zpCalendarFancyblue tfoot .active { /* Active (pressed) style for buttons in footer */
+  border-color: #000 #fff #fff #000;
+}
+
+.zpCalendarFancyblue tfoot .ttip .error {
+  color: #c20;
+}
+
+.zpCalendarFancyblue tfoot .footrow { /* The <TR> in footer (only one right now) */
+}
+
+.zpCalendarFancyblue .calendar-time-scroller {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.zpCalendarFancyblue .calendar-time-scroller .up {
+  width: 11px;
+  background: transparent url("scroller-up.gif") no-repeat 50% 50%;
+  height: 0.5em;
+/*  font-size: 1px; */
+}
+
+.zpCalendarFancyblue .calendar-time-scroller .down {
+  width: 11px;
+  background: transparent url("scroller-down.gif") no-repeat 50% 50%;
+  height: 0.5em;
+/*  font-size: 1px; */
+}
+
+
+/* Combo boxes (menus that display months/years for direct selection) */
+
+.zpCalendarFancyblue .combo {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 4em;
+  cursor: default;
+  border: 1px solid;
+  font-size: 90%;
+  border-color: #FFC46C #6B4000 #A26100 #FFAE35;
+  background-color: #D9D2C9;
+  color: #000000;
+}
+
+.zpCalendarFancyblue .combo .label,
+.zpCalendarFancyblue .combo .label-IEfix {
+  text-align: center;
+  padding: 1px;
+}
+
+.zpCalendarFancyblue .combo .label-IEfix {
+  width: 4em;
+}
+
+.zpCalendarFancyblue .combo .disabled {
+  color: #888;
+}
+
+.zpCalendarFancyblue .combo .active {
+  padding: 0px;
+  border: 1px solid;
+  background-color: #FFFBEF;
+  border-color: #404040 #d4d0c8 #d4d0c8 #404040;
+  color: #000000;
+}
+
+.zpCalendarFancyblue .combo .hilite {
+  border-color: #E4BF8F #573B1B #855A29 #DAA266;
+  background-color: #F5DAB7;
+  background: url("fancyblue/bg_button_hover.gif") 100% 100%;
+  color: #000000;
+}
+
+.zpCalendarFancyblue .history {
+  width: 18em;
+}
+
+.zpCalendarFancyblue .history .label {
+  text-align: center;
+}
+
+.zpCalendarFancyblue .history .label-IEfix {
+  width: 18em;
+}
+
+
+.zpCalendarFancyblue .zpCalDayInfo {
+  background-color: yellow;
+  font-size: 80%;
+}
+
+.zpCalendarFancyblue .zpCalSpecialDay {
+  background-color: #cccccc;
+}
+
+
+.zpCalendarFancyblue .month-left-border { /* Divider line between two monthes */
+  border-left:1px solid #585858;
+}
+
+
+/* time */
+
+.zpCalendarFancyblue tfoot tr.time td {
+  padding: 0;
+  border-top: 1px solid;
+  border-color: #8f8b7e;
+}
+
+.zpCalendarFancyblue tfoot tr.time td.hour
+.zpCalendarFancyblue tfoot tr.time td.minute {
+  text-align: right; font-weight: bold;
+  border-right: 1px solid; padding: 0 1px 0 3px;
+  border-color: #cdcabc;
+}
+
+.zpCalendarFancyblue tfoot tr.time td.hilite {
+  border: 0;
+  padding: 0;
+  background-color: #e4e0d8;
+}
+
+.zpCalendarFancyblue tfoot tr.time td.active {
+  border: 0;
+  padding: 0;
+  background-color: #b4b0a8;
+}
+
+.zpCalendarFancyblue tfoot tr.time td.timetext {
+  text-align: center;
+}
+
+.zpCalendarFancyblue tfoot tr.time table td {
+  border: 0;
+  padding: 0;
+}
+
+.zpCalendarFancyblue  tfoot tr.time td.colon {
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+}
+
+.zpCalendarFancyblue tfoot tr.time td.ampm {
+  text-align: center;
+}
+
+.zpCalendarFancyblue .calendar-time-scroller {
+  border-color: #adaa9c;
+}

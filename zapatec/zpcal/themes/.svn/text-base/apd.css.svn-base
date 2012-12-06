@@ -1,0 +1,394 @@
+/**
+ * Zapatec Calendar theme.
+ *
+ * Copyright (c) 2004-2009 by Zapatec, Inc.
+ * http://www.zapatec.com
+ * 1700 MLK Way, Berkeley, California,
+ * 94709, U.S.A.
+ * All rights reserved.
+ */
+
+/* $Id: apd.css 15736 2009-02-06 15:29:25Z nikolai $ */
+
+.zpCalendarApd {
+  z-index: 100;
+  border: 1px solid;
+  font-size: 11px;
+  cursor: default;
+  font-family: tahoma,verdana,sans-serif;
+}
+
+.zpCalendarApd table {
+  border: 1px solid;
+  font-size: 11px;
+  cursor: default;
+  font-family: tahoma,verdana,sans-serif;
+}
+
+/* Header part -- contains navigation buttons and day names. */
+
+.zpCalendarApd .button { /* "<<", "<", ">", ">>" buttons have this class */
+  text-align: center;    /* They are the navigation buttons */
+  padding: 2px;          /* Make the buttons seem like they're pressing */
+}
+
+.zpCalendarApd .nav {
+  background: url("menuarrow.gif") no-repeat 100% 100%;
+}
+
+.zpCalendarApd thead .title { /* This holds the current "month, year" */
+  font-weight: bold;      /* Pressing it will take you to the current date */
+  text-align: center;
+  padding: 2px;
+}
+
+.zpCalendarApd thead .headrow { /* Row <TR> containing navigation buttons */
+}
+
+.zpCalendarApd thead .name { /* Cells <TD> containing the day names */
+  border-bottom: 1px solid;
+  padding: 2px;
+  text-align: center;
+}
+
+.zpCalendarApd thead .weekend { /* How a weekend day name shows in header */
+}
+
+.zpCalendarApd thead .hilite { /* How do the buttons in header appear when hover */
+  border: 1px solid;
+  padding: 1px;
+}
+
+.zpCalendarApd thead .active { /* Active (pressed) buttons in header */
+  padding: 2px 0px 0px 2px;
+}
+
+.zpCalendarApd thead .daynames { /* Row <TR> containing the day names */
+}
+
+/* The body part -- contains all the days in month. */
+
+.zpCalendarApd tbody .day { /* Cells <TD> containing month days dates */
+  width: 2em;
+  text-align: right;
+  padding: 2px 4px 2px 2px;
+}
+
+.zpCalendarApd tbody .day.othermonth {
+}
+
+.zpCalendarApd tbody .day.othermonth.oweekend {
+}
+
+.zpCalendarApd table .wn {
+  padding: 2px 3px 2px 2px;
+  border-right: 1px solid;
+}
+
+.zpCalendarApd tbody .rowhilite td {
+}
+
+.zpCalendarApd tbody .rowhilite td.wn {
+}
+
+.zpCalendarApd tbody td.hilite { /* Hovered cells <TD> */
+  padding: 1px 3px 1px 1px;
+  border: 1px solid;
+}
+
+.zpCalendarApd tbody td.active { /* Active (pressed) cells <TD> */
+  padding: 2px 2px 0px 2px;
+}
+
+.zpCalendarApd tbody td.selected { /* Cell showing today date */
+  border: 1px solid;
+  padding: 1px 3px 1px 0px;
+}
+
+.zpCalendarApd tbody td.weekend { /* Cells showing weekend days */
+}
+
+.zpCalendarApd tbody .disabled {
+  color: #999;
+}
+
+.zpCalendarApd tbody .emptycell { /* Empty cells (the best is to hide them) */
+  visibility: hidden;
+}
+
+.zpCalendarApd tbody .emptyrow { /* Empty row (some months need less than 6 rows) */
+  display: none;
+}
+
+/* The footer part -- status bar and "Close" button */
+
+.zpCalendarApd tfoot .ttip { /* Tooltip (status bar) cell <TD> */
+  padding: 2px;
+}
+
+.zpCalendarApd tfoot .ttip .error {
+  color: #c20;
+}
+
+.zpCalendarApd tfoot tr.time td {
+  padding: 0;
+  border-top: 1px solid;
+}
+
+.zpCalendarApd tfoot tr.time td.timetext {
+  text-align: center;
+}
+
+.zpCalendarApd tfoot .hilite { /* Hover style for buttons in footer */
+  border: 1px solid;
+  padding: 1px;
+}
+
+.zpCalendarApd tfoot .active { /* Active (pressed) style for buttons in footer */
+  border: 0;
+  padding: 2px 0px 0px 2px;
+}
+
+.zpCalendarApd tfoot tr.time table td {
+  border: 0;
+  padding: 0;
+}
+
+.zpCalendarApd tfoot tr.time td.hour,
+.zpCalendarApd tfoot tr.time td.minute {
+  text-align: right; font-weight: bold;
+  border-right: 1px solid; padding: 0 1px 0 3px;
+}
+
+.zpCalendarApd tfoot tr.time td.colon {
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+}
+
+.zpCalendarApd tfoot tr.time td.ampm {
+  text-align: center;
+}
+
+/*
+.zpCalendarApd tfoot tr.time td.parent-hour table { position: relative; left: .7em; z-index: 10; empty-cells: visible; }
+.zpCalendarApd tfoot tr.time td.parent-minute table { position: relative; left: -.7em; z-index: 10; }
+*/
+
+
+.zpCalendarApd tfoot .footrow { /* The <TR> in footer (only one right now) */
+  text-align: center;
+}
+
+.zpCalendarApd .calendar-time-scroller {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.zpCalendarApd .calendar-time-scroller .up {
+  width: 11px;
+  background: transparent url("scroller-up.gif") no-repeat 50% 50%;
+  height: 0.5em;
+/*  font-size: 1px; */
+}
+
+.zpCalendarApd .calendar-time-scroller .down {
+  width: 11px;
+  background: transparent url("scroller-down.gif") no-repeat 50% 50%;
+  height: 0.5em;
+/*  font-size: 1px; */
+}
+
+
+/* Combo boxes (menus that display months/years for direct selection) */
+
+.zpCalendarApd .combo {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 4em;
+  cursor: default;
+  border: 1px solid;
+  font-size: 90%;
+}
+
+.zpCalendarApd .combo .active {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  font-weight: bold;
+}
+
+
+.zpCalendarApd .combo .label,
+.zpCalendarApd .combo .label-IEfix {
+  text-align: center;
+  padding: 1px;
+}
+
+.zpCalendarApd .combo .label-IEfix {
+  width: 4em;
+}
+
+.zpCalendarApd .combo .disabled {
+  color: #888;
+}
+
+.zpCalendarApd .history {
+  width: 18em;
+}
+
+.zpCalendarApd .history .label {
+  text-align: center;
+}
+
+.zpCalendarApd .history .label-IEfix {
+  width: 18em;
+}
+
+
+.zpCalendarApd, .zpCalendarApd table {
+  border-color: #556;
+  color: #000;
+  background-color: #eef;
+}
+
+.zpCalendarApd .nav {
+  background-color: #778;
+}
+
+.zpCalendarApd thead .title {
+  background-color: #ccd;
+  color: #000;
+}
+
+.zpCalendarApd thead .headrow {
+  background-color: #778;
+  color: #fff;
+}
+
+.zpCalendarApd thead .daynames {
+  background-color: #bdf;
+}
+
+.zpCalendarApd thead .name {
+  border-color: #556;
+  color: #000;
+}
+
+.zpCalendarApd thead .weekend {
+  color: #a66;
+}
+
+.zpCalendarApd thead .hilite {
+  background-color: #aaf;
+  color: #000;
+  border-color: #04f;
+}
+
+.zpCalendarApd thead .active {
+  background-color: #77c;
+}
+
+.zpCalendarApd tbody .day {
+  color: #456;
+}
+.zpCalendarApd tbody .day.othermonth {
+  color: #bbb;
+}
+.zpCalendarApd tbody .day.othermonth.oweekend {
+  color: #fbb;
+}
+
+.zpCalendarApd table .wn {
+  border-color: #000;
+  background-color: #bdf;
+}
+
+.zpCalendarApd tbody .rowhilite td {
+  background-color: #def;
+}
+
+.zpCalendarApd tbody .rowhilite td.wn {
+  background-color: #eef;
+}
+
+.zpCalendarApd tbody td.hilite {
+  background-color: #def;
+  border-color: #bbb;
+}
+
+.zpCalendarApd tbody td.active {
+  background-color: #cde;
+}
+
+.zpCalendarApd tbody td.selected {
+  border-color: #000;
+  background-color: #fff;
+  color: #000;
+}
+
+.zpCalendarApd tbody td.weekend {
+  color: #a66;
+}
+
+.zpCalendarApd tbody td.today {
+  color: #00f;
+}
+
+.zpCalendarApd tbody .disabled { color: #999; }
+
+.zpCalendarApd tfoot .footrow {
+  background-color: #556;
+  color: #fff;
+}
+
+.zpCalendarApd tfoot .ttip {
+  background-color: #ccd;
+  color: #445;
+  border-color: #556;
+}
+
+.zpCalendarApd tfoot .hilite {
+  background-color: #aaf;
+  border-color: #04f;
+  color: #000;
+}
+
+.zpCalendarApd tfoot .active {
+  background-color: #77c;
+}
+
+.zpCalendarApd .combo {
+  border-color: #655;
+  background-color: #def;
+  color: #000;
+}
+
+.zpCalendarApd .combo .hilite {
+  background-color: #acf;
+}
+
+.zpCalendarApd .combo .active {
+  border-color: #46a;
+  background-color: #eef;
+}
+
+.zpCalendarApd .month-left-border { /* Divider line between two monthes */
+  border-left:1px solid #555566;
+}
+
+
+/* time */
+
+.zpCalendarApd tfoot tr.time td { border-color: #000; }
+.zpCalendarApd tfoot tr.time td.hour,
+.zpCalendarApd tfoot tr.time td.minute { border-color: #aac; }
+.zpCalendarApd tfoot tr.time td.hilite { background-color: #acf; }
+.zpCalendarApd tfoot tr.time td.active { background-color: #9be; }
+
+/* Zapatec.Busycal */
+
+.zpCalendarApd .zpBusycalBusy {
+	font-weight: bold;
+}

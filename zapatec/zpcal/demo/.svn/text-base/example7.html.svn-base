@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+	<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+	<meta name="description" content=" 		Click the '...' button to display the calendar. 		You can select multiple days in the calendar and set the time for them using the time selector. 		The selected dates with time will appear in the text area. 		The following dates have been selected programmatically: 		 			 2009 April 25 12:00 			 2009 April 18 12:00 			 2009 April 22 12:00 			 2009 April 05 12:00 		 		You can uncheck these dates with a single click on them. 		When you have finished, click 'X' in the top right corner to close the calendar. 		Note that time is saved with dates. ">
+	<meta name="keywords" content="dhtml tools,javascript,DHTML Tools,Javascript,ajax,AJAX,Ajax,ajax tools,AJAX Tools,tools controls,simple javascript tools">
+	<title>Zapatec DHTML Calendar Widget - Choose Multiple Days</title>
+
+	<!-- Common JS files -->
+	<script type='text/javascript' src='../../utils/zapatec.js'></script>
+
+	<!-- Custom includes -->	
+		<!-- import the calendar script -->
+		<script type='text/javascript' src='../../utils/zpdict.js'></script>
+		<script type="text/javascript" src="../../utils/lang/zpdate-en.js"></script>
+		<script type="text/javascript" src="../../utils/zpdate.js"></script>
+		<script type="text/javascript" src="../src/calendar.js"></script>
+
+		<!-- other languages might be available in the lang directory; please check
+		your distribution archive. -->
+
+
+	<!-- ALL demos need these css -->
+	<link href="../../website/css/zpcal.css" rel="stylesheet" type="text/css">
+	<link href="../../website/css/template.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		body {
+			width: 778px;
+		}
+	</style>
+
+	<!-- Theme css -->
+	<link href="../themes/maroon.css" rel="stylesheet" type="text/css">
+
+	<link rel="SHORTCUT ICON" href="http://www.zapatec.com/website/main/favicon.ico">
+	
+
+
+</head>
+<body>	<div class='zpCalSubHeader' style='text-align:center;'>Choose Multiple Days</div>
+
+		<div class='zpCalDemoText'>
+			<ul>
+				<li>This demo uses the <b>maroon theme</b>.</li>
+				
+		<li>Click the '...' button to display the calendar.</li>
+		<li>You can select multiple days in the calendar and set the time for them using the time selector.</li>
+		<li>The selected dates with time will appear in the text area.</li>
+		<li>The following dates have been selected programmatically:
+		<ul>
+			<li> 2009 April 25 12:00</li>
+			<li> 2009 April 18 12:00</li>
+			<li> 2009 April 22 12:00</li>
+			<li> 2009 April 05 12:00</li>
+		</ul>
+		You can uncheck these dates with a single click on them.</li>
+		<li>When you have finished, click 'X' in the top right corner to close the calendar.</li>
+		<li>Note that time is saved with dates.</li>
+
+			</ul>
+		</div>
+
+
+
+<textarea name="date7" id="sel7" rows="15" cols="40"></textarea>
+<input type="button" value=" ... " id="button7">
+
+<script type="text/javascript">//<![CDATA[
+	<!--  to hide script contents from old browsers
+	// the default multiple dates selected, first time the calendar is instantiated
+	var MA = [ new Date(2009, 3, 5, 12, 00), new Date(2009, 3, 18, 12, 00), new Date(2009, 3, 22, 12, 00), new Date(2009, 3, 25, 12, 00) ];
+
+	function closeCal(cal) {
+
+		// here we'll write the output; this is only for example.  You
+		// will normally fill an input field or something with the dates.
+		var el = document.getElementById("sel7");
+
+		// reset initial content.
+		el.value = "";
+
+		// Reset the "MA", in case one triggers the calendar again.
+		// CAREFUL!  You don't want to do "MA = [];".  We need to modify
+		// the value of the current array, instead of creating a new one.
+		// Zapatec.Calendar.setup is called only once! :-)  So be careful.
+		MA.length = 0;
+
+		// walk the calendar's multiple dates selection hash
+		for (var i in cal.config.multiple) {
+			var currentDate = cal.config.multiple[i];
+
+		// sometimes the date is not actually selected, that's why we need to check.
+			if (currentDate) {
+				// OK, selected.  Fill an input field.  Or something.  Just for example,
+				// we will display all selected dates in the element having the id "output".
+
+				// and push it in the "MA", in case one triggers the calendar again.
+				MA[MA.length] = currentDate;
+			}
+			MA.sort(Zapatec.Date.compareDates);
+		}
+		if (this.sortOrder == "desc") {
+			var tempArray = new Array();
+			for (var i=0;i<MA.length;i++){
+				 tempArray[i]=MA[MA.length-1-i];
+			}
+			MA=tempArray;
+		}
+		for (var i in MA) {
+			if (cal.config.showsTime)
+				el.value += Zapatec.Date.print(MA[i], "%B %d %Y %H:%M\n");
+			else
+				el.value += Zapatec.Date.print(MA[i], "%B %d %Y\n");
+		}
+		cal.hide();
+		return true;
+	};
+	// end hiding contents from old browsers  -->
+</script>
+
+		<script type="text/javascript">
+		var cal = new Zapatec.Calendar({
+		
+		align      : "TR",
+		showOthers : true,
+		multiple   : MA, // pass the initial or computed array of multiple dates to be initially selected
+		onClose    : closeCal,
+		singleClick: false,
+		button     : "button7",
+		sortOrder  : "desc",
+		showsTime  : true,     // show time as well as date
+		theme      : "maroon"
+
+		});
+		
+		
+	</script>
+
+	<noscript>
+		<br/>
+		This page uses an <a href='http://www.zapatec.com/website/main/products/suite/'>
+		AJAX Component</a> - Zapatec DHTML Calendar Widget, but your browser does not support Javascript.
+		<br/>
+		<br/>
+	</noscript>
+		<br/><br/><br/>
+		<div class="footer" style='width: 778px; text-align:center; margin-top:2em'>
+		&copy; 2004-2009 <strong> <a href='http://www.zapatec.com/'>Zapatec, Inc.</a> </strong>
+		</div>
+</body>
+</html>

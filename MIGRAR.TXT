@@ -1,0 +1,57 @@
+ANTES DE COLOCAR EL SISTEMA EN LA MAQUINA DE HERMES
+- Corregir los errores en los nombres y apellidos, buscar la lista que me mandó la pasante
+- migrar la BD que está en la CCTDS con las correcciones que hizo el preparador
+- elimiar el par de estudiantes que tenían errores
+- corregir los errores que encontró el preparador con los proyectos
+- migrar todos los archivos php de mi minilaptop salvo cConstantes, index y scriptcas 
+- colocar 777 en los directorios donde se hace upload
+
+MIGRAR en el servidor de la CCTDS:
+- BD porque eliminé un par de estudiantes con errores pero OJO BORRÉ LA INSCRIPCIÓN DE YENNY VILLALBA CON MARYOLY!!!!1
+- Todos menos cConstantes, index y scriptcas
+- 
+PENDIENTES-------------:
+- Sustituir el listado de proyectos vigentes de la página (http://www.cctds.dex.usb.ve/ofertas_proyectos_sc.php) por la consulta del sistema (http://159.90.38.177/new_comunitario/vListaPublicaProyectos.php), para ello hay que arreglar lo siguiente:
+-- Cada proyecto debe tener link a los detalles
+-- el pdf que estaba antes era del plan de aplicacion, no de la descripción
+
+- si las horas acumuladas no son 120, el estudiante puede inscribir otro y de nuevo máximo dos proyectos.
+- en la vista de profesor, en cada proyecto debe aparecer la lista de alumnos inscritos y el profesor debe certificar cada informe.
+- Retirarse Maximo de dos proyectos
+- No se deberían mostrar errores con el SQL que no se pudo ejecutar!!!! debería mostrar un error más descente, algo como:  "ocurrió un error en la Base de Datos (tipo 0001), por favor comuníquese con el adminsitrador".
+- Colocar las consultas públicas???
+- Montar el sistema en el mismo espacio de la página? 
+- Inclcuir un máximo por proyecto?
+- al postularse en un proyecto, se pide el período donde el estudiante puede elegir pero debería mostrarse sólo el período siguiente dado que las inscripciones son en semana 12 para comenzar en semana 1 del siguiente trimestre.
+- cuando se validan las 120 horas de un estudiante, él ya no puede inscribirse en nada, incluso el sistema ya no debería mostrale ninguna opción.
+- creo que hay un error al cargar los datos del proyecto porque en el que tengo a mi nombre AB-0110 aparece hernan diaz como tutor y deberia aparecer yo
+- si ya el estudiante tiene algunas horas aprobadas, cuando va a notificar la culminación de otro proyecto debería poder elegir un número menor a horas??? justamente las que la faltan para llegar a 120
+- cuando hay un error en el pdf se recarga el formulario y pierde el querystring, por lo tanto no sabe en qué proyecto se encuentra el estudiante
+- cuando la CCTDS no valida la culminación se deberia notificar al estudiante y debería aparecer en su perfil. YA APARECE EN EL PERFIL, SE PUDIERA ENVIAR UN CORREO
+- la tabla tutor_inscripcion no hace falta creo que se puede borrar
+- Trimestralmente pedir a DACE la lista de estudiantes con más del 50% de creditos inscritos.
+
+
+
+
+
+
+
+LISTOS-------------------------:
+- al culminar cada proyecto, se deben validar mínimo 30 horas.
+- Error al cargar proyecto nuevo
+- Cuando la CCTDS no aprueba una inscripcion se le debe notificar al estudiante y mostrar el icono de alerta en su perfil. Falta la notificación por correo electrónico
+- las actividades no salen en el PDF
+- invertir el candado
+- en la planilla de inscripcion esta colocando el nombre del estudiante en el nombre del tutor 
+- El preparador debe corregir los apellidos por los nombres. Agarrar la lista de excel y borrar los que estén bien. Asignado a la pasante
+- No esta borrando las sesiones al salir (Google Chrome no las borra, hay que cerrar el navegador y volverlo a abrir)
+- No se debería postular en más de un proyecto de servicio comunitario. Deshabilité el link y en al Listar Proyecto si el estudiante está inscrito no le aparece el listado
+- al tratar de subir un archivo en la notificación de culminación, aparece un error diciendo que no se pudo mover el archivo, lo más seguro es que sea por problemas de permisos en el directorio, con 777 se arregla pero es inseguro, verificar con www-data
+- En la Lista de culminaciones (vListarInscripciones.php?opcion=validar_culminacion) se debería poder ver el pdf del informe final
+
+
+en la pagina, revisar 6.2 vs 5.2 en las normas y procedimientos
+
+
+03-36606

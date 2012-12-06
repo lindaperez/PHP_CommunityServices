@@ -1,0 +1,211 @@
+<?
+require "cAutorizacion.php";
+
+$modo_depuracion=FALSE;
+
+
+//se insertan los datos de la inscripcion
+
+//se obtiene el último id_inscripcion insertado
+
+//se insertan los datos del plan de accion: actividad, cronograma y horas
+
+$sql="INSERT INTO inscripcion VALUES(".
+"0, ".//id
+"'$_POST[mes_inicio]', ".
+"'$_POST[anio_inicio]', ".
+"'$_POST[mes_fin]', ".
+"'$_POST[anio_fin]', ".
+"'$_POST[usb_estudiante]', ".
+"'$_POST[id_proyecto]', ".
+"'$_POST[objetivos]', ".
+"'$_POST[usbid_tutor]', ".
+"'',".//fecha_fin_real
+"''".//observaciones
+")";
+
+
+$resultado=ejecutarConsulta($sql, $conexion);
+
+$sql_temp="SELECT max(id) as id FROM proyecto";
+if ($modo_depuracion) echo "$sql_temp<br>";
+
+$resultado=ejecutarConsulta($sql_temp, $conexion);
+$fila=obtenerResultados($resultado);
+$id_proy=$fila[id];
+
+//si el usuario no elige al TUTOR 1 de la lista, se debe insertar primero 
+//en la tabla usuario, luego en usuario_miembro_usb y finalmente en la tabla tutor_proy
+
+if ($_POST[tutor1_usbid]<>""){
+	$sql_temp="INSERT INTO tutor_proy VALUES ('$_POST[tutor1_usbid]','$id_proy')";
+	if ($modo_depuracion) echo "$sql_temp<br>";
+
+	$resultado=ejecutarConsulta($sql_temp, $conexion);
+	
+	$usbid_tutor=$_POST[tutor1_usbid];
+}else{
+	$sql_temp="INSERT INTO usuario VALUES (".
+	"'$_POST[tutor1_usbid_nuevo]', ".//usbid
+	"'$_POST[tutor1_nombre]', ".//nombre
+	"'$_POST[tutor1_apellido]', ".//apellido	
+	"'no tiene'".//password		
+	")";
+	if ($modo_depuracion) echo "$sql_temp<br>";	
+	$resultado=ejecutarConsulta($sql_temp, $conexion);
+	
+	$sql_temp="INSERT INTO usuario_miembro_usb VALUES (".
+	"'$_POST[tutor1_usbid_nuevo]', ".//usbid_usuario
+	"'$_POST[tutor1_dependencia]', ".//dependencia	
+	"'', ".//email secundario	
+	"'$_POST[tutor1_tlf]', ".//tlf	
+	"'$_POST[tutor1_ci]'".//ci				
+	")";
+	if ($modo_depuracion) echo "$sql_temp<br>";
+	$resultado=ejecutarConsulta($sql_temp, $conexion);	
+	
+	$usbid_tutor=$_POST[tutor1_usbid_nuevo];
+}
+
+$sql_temp="INSERT INTO tutor_proy VALUES (".
+"'$usbid_tutor', ".//usbid_usuario
+"'$id_proy' ".//id_proyecto	
+")";
+if ($modo_depuracion) echo "$sql_temp<br>";
+$resultado=ejecutarConsulta($sql_temp, $conexion);	
+
+
+//------------
+//si el usuario no elige al TUTOR 2 de la lista, se debe insertar primero 
+//en la tabla usuario, luego en usuario_miembro_usb y finalmente en la tabla tutor_proy
+
+if ($_POST[tutor2_usbid]<>""){
+	$sql_temp="INSERT INTO tutor_proy VALUES ('$_POST[tutor2_usbid]','$id_proy')";
+	if ($modo_depuracion) echo "$sql_temp<br>";
+	$resultado=ejecutarConsulta($sql_temp, $conexion);
+	
+	$usbid_tutor2=$_POST[tutor2_usbid];
+}else{
+	if($_POST[tutor2_usbid_nuevo]<>""){
+			$sql_temp="INSERT INTO usuario VALUES (".
+			"'$_POST[tutor2_usbid_nuevo]', ".//usbid
+			"'$_POST[tutor2_nombre]', ".//nombre
+			"'$_POST[tutor2_apellido]', ".//apellido	
+			"'no tiene'".//password		
+			")";
+			
+			if ($modo_depuracion) echo "$sql_temp<br>";
+			$resultado=ejecutarConsulta($sql_temp, $conexion);
+			
+			$sql_temp="INSERT INTO usuario_miembro_usb VALUES (".
+			"'$_POST[tutor2_usbid_nuevo]', ".//usbid_usuario
+			"'$_POST[tutor2_dependencia]', ".//dependencia	
+			"'', ".//email secundario	
+			"'$_POST[tutor2_tlf]', ".//tlf	
+			"'$_POST[tutor2_ci]'".//ci				
+			")";
+			if ($modo_depuracion) echo "$sql_temp<br>";
+			$resultado=ejecutarConsulta($sql_temp, $conexion);	
+			
+			$usbid_tutor2=$_POST[tutor2_usbid_nuevo];
+		}	
+	}
+
+if ($usbid_tutor2<>""){
+	$sql_temp="INSERT INTO tutor_proy VALUES (".
+	"'$usbid_tutor', ".//usbid_usuario
+	"'$id_proy' ".//id_proyecto	
+	")";
+	if ($modo_depuracion) echo "$sql_temp<br>";
+	$resultado=ejecutarConsulta($sql_temp, $conexion);	
+}
+
+//------------
+//si el usuario no elige al TUTOR 3 de la lista, se debe insertar primero 
+//en la tabla usuario, luego en usuario_miembro_usb y finalmente en la tabla tutor_proy
+
+if ($_POST[tutor3_usbid]<>""){
+	$sql_temp="INSERT INTO tutor_proy VALUES ('$_POST[tutor3_usbid]','$id_proy')";
+	if ($modo_depuracion) echo "$sql_temp<br>";
+	$resultado=ejecutarConsulta($sql_temp, $conexion);
+	
+	$usbid_tutor3=$_POST[tutor3_usbid];
+}else{
+	if($_POST[tutor3_usbid_nuevo]<>""){
+			$sql_temp="INSERT INTO usuario VALUES (".
+			"'$_POST[tutor3_usbid_nuevo]', ".//usbid
+			"'$_POST[tutor3_nombre]', ".//nombre
+			"'$_POST[tutor3_apellido]', ".//apellido	
+			"'no tiene'".//password		
+			")";
+			if ($modo_depuracion) echo "$sql_temp<br>";
+			$resultado=ejecutarConsulta($sql_temp, $conexion);
+			
+			$sql_temp="INSERT INTO usuario_miembro_usb VALUES (".
+			"'$_POST[tutor3_usbid_nuevo]', ".//usbid_usuario
+			"'$_POST[tutor3_dependencia]', ".//dependencia	
+			"'', ".//email secundario	
+			"'$_POST[tutor3_tlf]', ".//tlf	
+			"'$_POST[tutor3_ci]'".//ci				
+			")";
+			if ($modo_depuracion) echo "$sql_temp<br>";
+			$resultado=ejecutarConsulta($sql_temp, $conexion);	
+			
+			$usbid_tutor3=$_POST[tutor3_usbid_nuevo];
+		}	
+	}
+	
+if ($usbid_tutor3<>""){
+	$sql_temp="INSERT INTO tutor_proy VALUES (".
+	"'$usbid_tutor', ".//usbid_usuario
+	"'$id_proy' ".//id_proyecto	
+	")";
+	if ($modo_depuracion) echo "$sql_temp<br>";
+	$resultado=ejecutarConsulta($sql_temp, $conexion);	
+}
+
+//si el usuario no elige un proponente de la lista, se debe insertar primero y luego insertarlo en la tabla proponente
+if ($_POST[prop_usbid]<>""){
+
+	$sql_temp="INSERT INTO proponente VALUES (";
+	$sql_temp.="'$_POST[prop_usbid]','$id_proy')";
+	if ($modo_depuracion) echo "$sql_temp<br>";
+	$resultado=ejecutarConsulta($sql_temp, $conexion);			
+
+}else{
+	$sql_temp="INSERT INTO usuario VALUES (".
+	"'$_POST[prop_usbid_nuevo]', ".//usbid
+	"'$_POST[prop_nombre]', ".//nombre
+	"'$_POST[prop_apellido]', ".//apellido
+	"'1234', ".//password. Esto es temporal dado que se va a utilizar el usbid verdadero para el acceso prop_ci
+	"'$_POST[prop_ci]')"; //cedula
+	$resultado=ejecutarConsulta($sql_temp, $conexion);
+	if ($modo_depuracion) echo "$sql_temp<br>";
+
+	if ($_POST[prop_carnet]<>""){
+		$sql_temp="INSERT INTO usuario_estudiante (usbid_usuario, carnet) VALUES (";
+		$sql_temp.="'$_POST[prop_usbid_nuevo]','$_POST[prop_carnet]')";
+		if ($modo_depuracion) echo "$sql_temp<br>";
+		$resultado=ejecutarConsulta($sql_temp, $conexion);			
+	}
+	if ($_POST[prop_dependencia]<>""){
+		$sql_temp="INSERT INTO usuario_miembro_usb (usbid_usuario, dependencia) VALUES (";
+		$sql_temp.="'$_POST[prop_usbid_nuevo]','$_POST[prop_dependencia]')";
+		if ($modo_depuracion) echo "$sql_temp<br>";
+		$resultado=ejecutarConsulta($sql_temp, $conexion);					
+	}
+
+	$sql_temp="INSERT INTO proponente VALUES (";
+	$sql_temp.="'$_POST[prop_usbid_nuevo]','$id_proy')";
+	if ($modo_depuracion) echo "$sql_temp<br>";
+	$resultado=ejecutarConsulta($sql_temp, $conexion);	
+}
+
+cerrarConexion($conexion);
+
+	?>
+	<script>
+	alert("El proyecto ha sido registrado satisfactoriamente.");
+	window.location="vListarOpciones.php";
+	</script>	
+

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/3/trunk/zapatec/utils/dhelp/themes
+END
+print.css
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3/trunk/zapatec/utils/dhelp/themes/print.css
+END
+default.css
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3/trunk/zapatec/utils/dhelp/themes/default.css
+END
+demos.css
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3/trunk/zapatec/utils/dhelp/themes/demos.css
+END

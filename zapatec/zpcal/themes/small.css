@@ -1,0 +1,9 @@
+/* $Id: small.css 8381 2007-10-02 13:17:17Z nmaxim $ */
+.zpCalendarSmall {
+  border-width: 1px !important;
+  font-size: 9px !important;
+}
+
+.zpCalendarSmall table {
+  font-size: 9px !important;
+}

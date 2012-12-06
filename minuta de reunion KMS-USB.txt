@@ -1,0 +1,20 @@
+Fecha 13 de junio de 2011
+
+- Elevar Sinai a KMS? 
+- Utilizar al KMS del LISI? 
+- Quien haría el mantenimiento?
+- La principal piedra de tranca de un KMS es el rechazo al cambio de las usuarios. El DID empotró sus procesos a Sinai para lograr el éxito.
+- El KMS debe "integrar/consultar" sistemas a través de Webservices, con Sinai, RRHH, DEX, Noticias, DACE, etc...
+- El sistema ya esta desarrollado solo falta impulso???? 
+- Vamos a tener acceso total al codigo fuente y vamos a tener libertad para personalizarlo pero no para distribuirlo.
+
+
+- La universidad no tenia capacidad?????
+- Los pasantes no pueden inscribir materias al mismo tiempo !!!!
+
+1. por qué comprar un sistema en lugar mejorar el sinai?
+2. por qué no invitar a los grupos de BD y sistemas de información desde un principio?
+
+3. Quien va a validar las actividades? El KMS nuevo va a evitar las mentiras de sinai?
+4. Como van a garantizar el uso?
+

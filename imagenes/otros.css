@@ -1,0 +1,61 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+h2 {
+	text-align:center;
+}
+
+.fix, .clear {
+	clear:both;
+}
+
+.header, .footer {
+	margin:0 auto;
+}
+.header td > div {
+	padding-right:10px;
+}
+
+.layout {
+	width: 990px;
+	margin:0 auto;
+}
+.content {
+	float:left;
+	width:770px;
+}
+
+#sidebar {
+	float:left;
+	width:200px;
+	padding:10px;
+	font-size:12px;
+}
+#sidebar h2 {
+	font-size:14px;
+}
+#sidebar .box  {
+	margin-bottom:10px;
+}
+#sidebar .box select {
+	width:200px;
+}
+#sidebar .accordion {
+	/* put them side by side */
+	float:left;
+}
+#sidebar .accordion .pane {
+	padding:0 0 10px 0;
+}
+#sidebar .accordion .current {
+	background-color: #FFF;
+}
+#sidebar .accordion h2 {
+	margin:0;
+	padding:0;
+	width:200px;
+	height:30px;
+	background:url("../imagenes/h30.png") repeat scroll 0 0 #CCCCCC;
+	line-height:30px;
+	cursor:pointer;
+}

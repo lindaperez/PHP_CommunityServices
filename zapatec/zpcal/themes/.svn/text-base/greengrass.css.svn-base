@@ -1,0 +1,313 @@
+/* $Id*/
+
+div.zpCalendarGreengrass {
+  position: relative;
+}
+
+
+.zpCalendarGreengrass table {
+  border: 1px solid;
+  font-size: 11px;
+  cursor: default;
+  font-family: tahoma,verdana,sans-serif;
+  border-color: #666666;
+  color: #000;
+  background-color: #9FB50C;
+}
+
+.zpCalendarGreengrass {
+  z-index: 100;
+  border: 1px solid;
+  font-size: 11px;
+  cursor: default;
+  font-family: tahoma,verdana,sans-serif;
+  border-color: #666666;
+}
+
+/* Header part -- contains navigation buttons and day names. */
+
+.zpCalendarGreengrass .button { /* "<<", "<", ">", ">>" buttons have this class */
+  text-align: center;    /* They are the navigation buttons */
+  padding: 2px;          /* Make the buttons seem like they're pressing */
+  background-color: #999933;
+  color: #ffffff;
+}
+
+.zpCalendarGreengrass .nav {
+  background: url("menuarrow.gif") no-repeat 100% 100%;
+  background-color: #999933;
+}
+
+.zpCalendarGreengrass thead .title { /* This holds the current "month, year" */
+  font-weight: bold;      /* Pressing it will take you to the current date */
+  text-align: center;
+  padding: 2px;
+  background-color: #819404;
+  color: #ffffff;
+}
+
+.zpCalendarGreengrass thead .headrow { /* Row <TR> containing navigation buttons */
+}
+
+.zpCalendarGreengrass thead .name { /* Cells <TD> containing the day names */
+  border-bottom: 1px solid;
+  padding: 2px;
+  text-align: center;
+  border-color: #565;
+  color: #000;
+  bakcground-color: #D9D980;
+
+}
+
+.zpCalendarGreengrass thead .weekend { /* How a weekend day name shows in header */
+  color: #CC0000;
+
+}
+
+.zpCalendarGreengrass thead .hilite { /* How do the buttons in header appear when hover */
+  border: 1px solid;
+  padding: 1px;
+  background-color: #AFAF00;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.zpCalendarGreengrass thead .active { /* Active (pressed) buttons in header */
+  padding: 2px 0px 0px 2px;
+  background-color: #AFAF00;
+  border-color: #999999 #ffffff #ffffff #999999;
+}
+
+.zpCalendarGreengrass thead .daynames { /* Row <TR> containing the day names */
+   background-color: #D9D980;
+}
+
+/* The body part -- contains all the days in month. */
+
+.zpCalendarGreengrass tbody .day { /* Cells <TD> containing month days dates */
+  width: 2em;
+  text-align: right;
+  padding: 2px 4px 2px 2px;
+  color: #333333;
+  background-color: #9FB50C;
+}
+
+.zpCalendarGreengrass tbody .day.othermonth {
+  font-size: 80%;
+  color: #888;
+}
+
+.zpCalendarGreengrass tbody .day.othermonth.oweekend {
+  color: #E68080;
+}
+
+.zpCalendarGreengrass table .wn {
+  padding: 2px 3px 2px 2px;
+  border-right: 1px solid;
+  border-color: #000000;
+  background-color: #D9D980;
+}
+
+.zpCalendarGreengrass tbody .rowhilite td {
+  background-color: #D9D980;
+}
+
+.zpCalendarGreengrass tbody .rowhilite td.wn {
+  background-color: #FFFDE3;
+}
+
+.zpCalendarGreengrass tbody td.hilite { /* Hovered cells <TD> */
+  padding: 1px 3px 1px 1px;
+  border: 1px solid;
+  background-color: #C5C572;
+  border-color: #ffffff;
+}
+
+.zpCalendarGreengrass tbody td.active { /* Active (pressed) cells <TD> */
+  padding: 2px 2px 0px 2px;
+  background-color: #FFFDE3;
+}
+
+.zpCalendarGreengrass tbody td.selected { /* Cell showing today date */
+  font-weight: bold;
+  border: 1px solid;
+  padding: 1px 3px 1px 0px;
+  border-color: #999999 #ffffff #ffffff #999999;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.zpCalendarGreengrass tbody td.weekend { /* Cells showing weekend days */
+  color: #CC0000;
+}
+
+.zpCalendarGreengrass tbody td.today {
+  font-weight: bold;
+  color: #000000;
+}
+
+.zpCalendarGreengrass tbody .disabled {
+  color: #999;
+}
+
+.zpCalendarGreengrass tbody .emptycell { /* Empty cells (the best is to hide them) */
+  visibility: hidden;
+}
+
+.zpCalendarGreengrass tbody .emptyrow { /* Empty row (some months need less than 6 rows) */
+  display: none;
+}
+
+/* The footer part -- status bar and "Close" button */
+
+.zpCalendarGreengrass tfoot .footrow { /* The <TR> in footer (only one right now) */
+  background-color: #565;
+  color: #fff;
+}
+
+.zpCalendarGreengrass tfoot .ttip { /* Tooltip (status bar) cell <TD> */
+  padding: 2px;
+  background-color: #C9C91A;
+  color: #000000;
+}
+
+.zpCalendarGreengrass tfoot .ttip .error {
+  color: #c20;
+}
+
+.zpCalendarGreengrass tfoot .hilite { /* Hover style for buttons in footer */
+  border: 1px solid;
+  padding: 1px;
+  background-color: #afa;
+  border-color: #084;
+  color: #000;
+}
+
+.zpCalendarGreengrass tfoot .active { /* Active (pressed) style for buttons in footer */
+  border: 0;
+  padding: 2px 0px 0px 2px;
+  background-color: #7c7;
+}
+
+/* Combo boxes (menus that display months/years for direct selection) */
+
+.zpCalendarGreengrass .combo {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 4em;
+  cursor: default;
+  border: 1px solid;
+  font-size: 90%;
+  border-color: #AAA196;
+  background-color: #FFFDE3;
+  color: #333333;
+}
+
+.zpCalendarGreengrass .combo .hilite {
+  background-color: #DED8B7;
+}
+
+.zpCalendarGreengrass .combo .active {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  font-weight: bold;
+  border-color: #AAA196;
+  background-color: #FFEA95;
+}
+
+.zpCalendarGreengrass .combo .label {
+  text-align: center;
+  padding: 1px;
+}
+
+.zpCalendarGreengrass .combo .label-IEfix {
+  width: 4em;
+}
+
+.zpCalendarGreengrass .combo .disabled {
+  color: #888;
+}
+
+.zpCalendarGreengrass .history {
+  width: 18em;
+}
+
+.zpCalendarGreengrass .history .label {
+  text-align: center;
+}
+
+.zpCalendarGreengrass .history .label-IEfix {
+  width: 18em;
+}
+
+.zpCalendarGreengrass .month-left-border { /* Divider line between two monthes */
+  border-left:1px solid #556655;
+}
+
+/* time */
+
+.zpCalendarGreengrass tfoot tr.time td {
+  padding: 0;
+  border-top: 1px solid;
+  border-color: #8a8;
+}
+
+.zpCalendarGreengrass tfoot tr.time td.timetext {
+  text-align: center;
+}
+
+.zpCalendarGreengrass tfoot tr.time td.hour,
+.zpCalendarGreengrass tfoot tr.time td.minute {
+  text-align: right; font-weight: bold;
+  border-right: 1px solid; padding: 0 1px 0 3px;
+  border-color: #aca;
+}
+
+.zpCalendarGreengrass tfoot tr.time td.hilite {
+  background-color: #FFEA95;
+}
+
+.zpCalendarGreengrass tfoot tr.time td.active {
+  background-color: #FFFDE3;
+}
+
+.zpCalendarGreengrass tfoot tr.time table td {
+  border: 0;
+  padding: 0;
+}
+
+.zpCalendarGreengrass tfoot tr.time td.colon {
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+}
+
+.zpCalendarGreengrass tfoot tr.time td.ampm {
+  text-align: center;
+}
+
+
+.zpCalendarGreengrass tfoot .footrow { /* The <TR> in footer (only one right now) */
+  text-align: center;
+}
+
+.zpCalendarGreengrass .calendar-time-scroller {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.zpCalendarGreengrass .calendar-time-scroller .up {
+  width: 11px;
+  background: transparent url("scroller-up.gif") no-repeat 50% 50%;
+  height: 0.5em;
+/*  font-size: 1px; */
+}
+
+.zpCalendarGreengrass .calendar-time-scroller .down {
+  width: 11px;
+  background: transparent url("scroller-down.gif") no-repeat 50% 50%;
+  height: 0.5em;
+/*  font-size: 1px; */
+}

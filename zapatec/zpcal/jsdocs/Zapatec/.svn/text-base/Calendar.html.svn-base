@@ -1,0 +1,3717 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/REC-html40/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Zapatec.Calendar
+</TITLE>
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../stylesheet.css" TITLE="Style">
+</HEAD>
+<SCRIPT>
+function asd()
+{
+parent.document.title="Zapatec.Calendar";
+}
+</SCRIPT>
+<BODY BGCOLOR="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">  <A HREF="../overview-summary-calendar-core.js.html"><FONT CLASS="NavBarFont1"><B>File</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">&nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <!--TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"-->    <!--A HREF="deprecated-list.html"--><!--FONT CLASS="NavBarFont1">Deprecated</FONT--><!--/A--><!--&nbsp;</TD-->
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"--><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>Zapatec Calendar</B>
+</EM>
+</TD
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../Zapatec/Busycal.html"><B>PREV CLASS</B></A><!-- 
+   NEXT CLASS 
+-->
+&nbsp;<A HREF="../"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;
+<SCRIPT>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="../allclasses-noframe.html" TARGET=""><B>All Classes</B></A>
+</NOSCRIPT>
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<!-- =========== END OF NAVBAR =========== -->
+<HR>
+
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>Class Zapatec.Calendar</H2>
+<PRE>Object
+   |
+   +--<a href='../'>Zapatec.Widget</a>
+         |
+         +--<b>Zapatec.Calendar</b>
+</PRE>
+
+   
+      <DL>
+      <DT>
+         <B>Direct Known Subclasses:</B> 
+         <DD>
+                  <a href='../Zapatec/Busycal.html'>Zapatec.Busycal</a>
+         </DD>
+      </DL>
+   
+
+
+<HR>
+<DL>
+   <!-- Class definition -->
+   <DT>class 
+   <B>Zapatec.Calendar</B>
+   
+      <DT>extends <a href='../'>Zapatec.Widget</a> 
+   
+
+</DL>
+   
+   <P>
+   <I>Defined in <a href='../overview-summary-calendar-core.js.html'>calendar-core.js</a></I><BR/><BR/><B>Requires:</B><UL>- Zapatec.Widget Requires utils/zapatec.js</UL>
+   </P>
+   
+   <HR>
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<!-- ======== END NESTED CLASS SUMMARY ======== -->
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+
+   <A NAME="field_summary"><!-- --></A>
+      <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+         <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+            <TD COLSPAN=2><FONT SIZE="+2">
+               <B>Field Summary</B></FONT></TD>
+         </TR>
+
+   <!-- This is one instance field summary -->
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#_toggleMultipleDate">_toggleMultipleDate</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given a Date object, this function will "toggle" it in the calendar; that
+ is, it will select it if not already selected, or unselect it if was already
+ selected.</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#setDateStatusHandler">setDateStatusHandler</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These functions allow one to install a handler that gets called for each
+ date when a month is displayed in the calendar.</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;static&gt; &nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#!s!activeCalendar">activeCalendar</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+   </TR>
+   
+
+   </TABLE>
+   &nbsp;
+   
+
+   
+
+<!-- =========== END FIELD SUMMARY =========== -->
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD>
+      <CODE>
+	 <B>
+	    <A HREF="#Zapatec.Calendar()">Zapatec.Calendar</A></B>(&lt;object&gt; oArg, date, onSelect, onClose)
+      </CODE>
+      <BR>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Zapatec Calendar widget class.
+      </TD>
+</TR>
+</TABLE>
+
+<!-- ======== END CONSTRUCTOR SUMMARY ======== -->
+
+&nbsp;
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TD>
+</TR>
+
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#_displayWeekdays">_displayWeekdays</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This function displays the week day names in the calendar header, according
+ to the current "firstDay".
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#_dragStart">_dragStart</A></B>(ev)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 \internal Starts dragging the element.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#_hideCombos">_hideCombos</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 \internal Hides all combo boxes that might be displayed.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#_init">_init</A></B>(firstDay, date, last)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 (RE)Initializes the calendar to the given date and firstDay.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#_initMultipleDates">_initMultipleDates</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 If "multiple dates" is selected (the calendar.multiple property) this
+ function will highlight cells that display dates that are selected.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#callCloseHandler">callCloseHandler</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Calls the calendar's onClose handler, if present.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#callHandler">callHandler</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Call the calendar's "onSelected" handler, if defined.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#callHelpHandler">callHelpHandler</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Show "ABOUT" information
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#create">create</A></B>(_par)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This function creates the calendar HTML elements inside the given parent.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#destroy">destroy</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Removes the calendar object from the DOM tree and destroys it.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getNavigationPos">getNavigationPos</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This method returns the date representing the year and month shown in control month.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getRange">getRange</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Returns range of displayed dates.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#hide">hide</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Hides the calendar.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#hideShowCovered">hideShowCovered</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This function hides or shows "windowed controls" accordingly so that the
+ calendar isn't obtured by any such control.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#init">init</A></B>(&lt;object&gt; oArg)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Initializes object.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#navigateTo">navigateTo</A></B>(date)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This method affects control month.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#nextMonth">nextMonth</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Moves the Calendar view one month forward.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#nextYear">nextYear</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Moves the Calendar view one year forward.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#onCloseInner">onCloseInner</A></B>(cal)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Default onClose function
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#onHide">onHide</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Set activeCalendar = null after hide effect
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#parseDate">parseDate</A></B>(str, fmt)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Tries to identify the date represented in a string.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#prevMonth">prevMonth</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Moves the Calendar view one month backward.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#prevYear">prevYear</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Moves the Calendar view one year backward.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#printWith2Time">printWith2Time</A></B>(&lt;Object&gt; date, date1, &lt;Object&gt; format)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Print date with timeRange paramiter
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#reconfigure">reconfigure</A></B>(&lt;object&gt; oArg)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Reconfigures the calendar with new config options after it was initialized.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#refresh">refresh</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 "refresh()" isn't a good name for it: this function _destroys_ the calendar
+ object and creates another one with the same parameters.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#reinit">reinit</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Refreshes the calendar.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#reparent">reparent</A></B>(new_parent)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Moves the calendar element to a different section in the DOM tree (changes
+ its parent).
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#selectDate">selectDate</A></B>(&lt;Object&gt; dates)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Selects the passed date.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setCookie">setCookie</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Set cookie, if it was saved.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setDate">setDate</A></B>(date, justInit)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Moves the calendar to the specified date.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setDateFormat">setDateFormat</A></B>(str)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Customizes the date format that will be reported to the onSelect handler.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setDateToolTipHandler">setDateToolTipHandler</A></B>(unaryFunction)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Call this in order to install a function handler that returns a tooltip for
+ the given date.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setDisabledHandler">setDisabledHandler</A></B>(unaryFunction)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setFirstDayOfWeek">setFirstDayOfWeek</A></B>(firstDay)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Configures the "firstDay" parameter of the calendar.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setMultipleDates">setMultipleDates</A></B>(multiple)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This function sets up the cal.multiple property initially when the flat or popup calendar is created.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setRange">setRange</A></B>(A, Z)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Configures a range of allowed dates for the calendar.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setTtDateFormat">setTtDateFormat</A></B>(str)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Customizes the tooltip date format.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#show">show</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Displays a hidden calendar.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#showAt">showAt</A></B>(x, y)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Shows the calendar at a given absolute position (beware that, depending on
+ the calendar element style -- position property -- this might be relative to
+ the parent's containing rectangle).
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#showAtElement">showAtElement</A></B>(el, opts)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This function displays the calendar near a given "anchor" element, according
+ to some rules passed in \em opts.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#showHint">showHint</A></B>(text)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Displays a hint in the status bar
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#submitFlatDates">submitFlatDates</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Call the calendar's callback function, if defined.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#toggleMultipleDate">toggleMultipleDate</A></B>(date, date1)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#updateHistory">updateHistory</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This function updates the calendar history and saves the cookie.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#updateWCH">updateWCH</A></B>(other_el)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Updates the calendar "WCH" (windowed controls hider).
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!_add_evs">_add_evs</A></B>(el)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 \internal Adds a set of events to make some element behave like a button.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!_checkCalendar">_checkCalendar</A></B>(ev)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This gets called when the user presses a mouse button anywhere in the
+ document, if the calendar is shown.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!_del_evs">_del_evs</A></B>(el)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 \internal This function undoes what Zapatec.Calendar._add_evs did, therefore
+ unregisters the event handlers.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!_keyEvent">_keyEvent</A></B>(ev)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This function handles keypress events that occur while a popup calendar is
+ displayed.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!calDragEnd">calDragEnd</A></B>(ev)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Gets called when the drag and drop operation is finished; thus, at
+ "onmouseup".
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!calDragIt">calDragIt</A></B>(ev)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Called at mouseover and/or mousemove on document, this function repositions
+ the calendar according to the current mouse position.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!cellClick">cellClick</A></B>(el, ev)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 The generic "click" handler.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!compareDates">compareDates</A></B>(date1, date2)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Compare two dates in either ascending or descending order.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!dayMouseDown">dayMouseDown</A></B>(ev)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Called when the mouse button is pressed upon a button.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!dayMouseOut">dayMouseOut</A></B>(ev)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Gets called when the mouse leaves a button.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!dayMouseOver">dayMouseOver</A></B>(ev)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This function gets called at "onmouseover" events that trigger on any kind
+ of button, like dates, navigation buttons, etc.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!deselectDate">deselectDate</A></B>(&lt;Object&gt; dates)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!findHist">findHist</A></B>(el)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Similar to findMonth() but for the history combo.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!findMonth">findMonth</A></B>(el)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Given an HTML element, this function determines if it's part of the "months"
+ combo box and if so it returns the element containing the month name.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!findYear">findYear</A></B>(el)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Similar to the above functions, but for the years combo.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!i18nOld">i18nOld</A></B>(str, type)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Translate a string according to the currently loaded language table.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!loadPrefs">loadPrefs</A></B>(oConfig)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Loads the preference cookie and merges saved prefs to Zapatec.Calendar.prefs.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!savePrefs">savePrefs</A></B>(calendarId)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Writes the preferences cookie.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!showHistoryCombo">showHistoryCombo</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Same as the above, this function displays the history combo box for the
+ active calendar.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!showMonthsCombo">showMonthsCombo</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This function displays the months combo box.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!showYearsCombo">showYearsCombo</A></B>(fwd)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Displays the years combo box for the active calendar.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!tableMouseDown">tableMouseDown</A></B>(ev)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This is a simple function that stops a "mousedown" related to the calendar's
+ table element.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!tableMouseOver">tableMouseOver</A></B>(ev)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Event handler that gets called when the end-user moves the mouse over the
+ document.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&lt;static&gt;&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#!s!tableMouseUp">tableMouseUp</A></B>(ev)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 This is an event handler that gets called when the mouse button is released
+ upon the document.
+      </TD>
+   </TR>
+
+
+</TABLE>
+
+
+
+<P>
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+<!-- ============ FIELD DETAIL START =========== -->
+
+   <A NAME="field_detail"><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+      <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+         <TD COLSPAN=1><FONT SIZE="+2"><B>Field Detail</B></FONT></TD>
+      </TR>
+   </TABLE>
+
+   
+   <A NAME="_toggleMultipleDate"><!-- --></A>
+   <H3>_toggleMultipleDate</H3>
+   <PRE>Object&nbsp;<B>_toggleMultipleDate</B></PRE>
+   <UL>
+   Given a Date object, this function will "toggle" it in the calendar; that
+ is, it will select it if not already selected, or unselect it if was already
+ selected.  The array of dates is updated accordingly and the cell object
+ will be added or removed the appropriate class name ("selected").  Of
+ course, this only takes place if "multiple dates" is selected.
+
+ _toggleMultipleDate - for old versions
+   
+   </UL>
+   <HR>
+   
+   <A NAME="setDateStatusHandler"><!-- --></A>
+   <H3>setDateStatusHandler</H3>
+   <PRE>Object&nbsp;<B>setDateStatusHandler</B></PRE>
+   <UL>
+   These functions allow one to install a handler that gets called for each
+ date when a month is displayed in the calendar.  Based on this handler's
+ return value, that date can be disabled or highlighted using a class name
+ returned by the handler.
+
+ The handler has the following prototype:
+
+ \code
+	function dateStatus(date, year, month, day);
+ \endcode
+
+ While all 4 parameters are passed, the handler can for instance use only the
+ first one.  The year, month and day can all be determined from the first
+ parameter which is a Date object, but because many people will explicitely
+ need the year, month or day, we pass them too to speed things up (since we
+ already know them at the time the handler is called).
+
+ Here is an example of a not-so-complex handler:
+
+ \code
+
+function my_DateStatus(date, year, month, day) {}
+	calendar.setDateStatusHandler(my_DateStatus);
+ \endcode
+
+ The above handler will disable all dates in 2000 (returns true) and
+ highlight "1979/08/03" using the class "birthday".  From this example we can
+ notice that the handler can return a boolean value or a string value.  The
+ "boolean" return type is supported for backwards compatibility (function
+ setDisabledHandler, which is deprecated by setDateStatusHandler).  Here's
+ what the return value means:
+
+ - \b true: the date will be disabled.
+ - \b false: no action taken (date stays enabled).
+ - "disabled": the date will be disabled.
+ - "other_string": the "other_string" will be added to the cell's class name.
+ - "disabled other_string": the date will be disabled and "disabled other_string"
+	will be added to cell's class name; this helps one make a date disabled while
+	still highlighting it in a special way.
+
+ Note that user defined class names should have an associated CSS part
+ somewhere in the document that specifies how the days will look like;
+ otherwise, no difference will be visible.  For instance, for highlighting
+ "birthday" dates, one should also add:
+
+ \code
+	.birthday { color: #f00; }
+ \endcode
+
+ somewhere in the CSS of the calling document.  (the above will make them
+ red).
+
+ Disabled dates are not clickable; however, if one overrides the "disable"
+ CSS class, or if the cell also gets an "other_string" class that contains
+ settings that override the "disabled" class, those cells might not look
+ "disabled" but still behave so.
+
+ \b WARNING: this function gets called 28 to 31 times each time a month is
+ displayed.  This means that if you are doing crazy computations in order to
+ determine the status of a day, things \em will slow down dramatically.  You
+ have been warned.
+   
+   </UL>
+   <HR>
+   
+   <A NAME="!s!activeCalendar"><!-- --></A>
+   <H3>activeCalendar</H3>
+   <PRE>&lt;static&gt;&nbsp;Object&nbsp;<B>activeCalendar</B></PRE>
+   <UL>
+   
+   
+   </UL>
+   <HR>
+   
+
+
+<!-- ============ FIELD DETAIL END =========== -->
+
+    <!-- ========= CONSTRUCTOR DETAIL START ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+      <TD COLSPAN=1>
+      <FONT SIZE="+2"><B>Constructor Detail</B></FONT>
+      </TD>
+   </TR>
+</TABLE>
+
+<A NAME="Zapatec.Calendar()"><!-- --></A><H3>
+Zapatec.Calendar</H3>
+<PRE><B>Zapatec.Calendar</B>(&lt;object&gt; oArg, date, onSelect, onClose)</PRE>
+
+
+<UL>
+   Zapatec Calendar widget class. Extends base Zapatec Widget class
+ (utils/zpwidget.js).
+
+ <pre>
+ <strong>In addition to config options defined in base Zapatec.Widget class
+ provides following config options:</strong>
+
+	inputField				| the ID of an input field to store the date
+	displayArea				| the ID of a DIV or other element to show the date
+	button					| ID of a button or other element that will trigger the calendar
+	eventName				| event that will trigger the calendar, without the "on" prefix (default: "click")
+	closeEventName			| event that will close the calendar (i.e. one can use "focus" for eventName and "blur" for closeEventName)
+	ifFormat					| date format that will be stored in the input field
+	daFormat					| the date format that will be used to display the date in displayArea
+	singleClick				| (true/false) wether the calendar is in single click mode or not (default: true)
+	firstDay					| numeric: 0 to 6.  "0" means display Sunday first, "1" means display Monday first, etc.
+	align						| alignment (default: "Br"); if you don't know what's this see the calendar documentation
+	range						| array with 2 elements.  Default: [1900.0, 2999.12] -- the range of years available
+	weekNumbers				| (true/false) if it's true (default) the calendar will display week numbers
+	flat						| null or element ID; if not null the calendar will be a flat calendar having the parent with the given ID
+	flatCallback			| function that receives a JS Date object and returns an URL to point the browser to (for flat calendar)
+	disableFunc				| function that receives a JS Date object and should return true if that date has to be disabled in the calendar
+	onSelect					| function that gets called when a date is selected.  You don't _have_ to supply this (the default is generally okay)
+	onClose					| function that gets called when the calendar is closed.  [default]
+	onUpdate					| function that gets called after the date is updated in the input field.  Receives a reference to the calendar.
+	onFDOW					| an event handler that is fired when a user click on the day name.
+	onWeekClick				| an event handler that is fired when a user click on the week number.
+	onTodayClick			| an event handler that is fired when a user click on the today button.
+	onMonthSelect			| an event handler that is fired when a user choose a month (buttons or combo).
+	onYearSelect			| an event handler that is fired when a user choose a year (buttons or combo).
+	onHisrotySelect		| an event handler that is fired when a user choose a history date (buttons or combo).
+	noGrab					| prevents calendar from adding document event handlers to intercept key events or to close the calendar when it is clicked outside
+	onCreate					| an event handler that is fired when calendar create.
+	date						| the date that the calendar will be initially displayed to
+	showsTime				| default: false; if true the calendar will include a time selector
+	timeFormat				| the time format; can be "12" or "24", default is "12"
+	electric					| if true (default) then given fields/date areas are updated for each move; otherwise they're updated only on close
+	sortOrder				| ("asc"(ending)/"desc"(ending)/"none"). If "asc" (default), order of the multiple dates (when multiple dates is on) will be sorted in ascending order. Otherwise, it will be sorted in descending order. "none" means no sorting is needed.
+	step						| configures the step of the years in drop-down boxes; default: 2
+	position					| configures the calendar absolute position; default: null
+	cache						| if "true" (  default: "true") it will reuse the same calendar object, where possible
+	showOthers				| if "true" (but default: "false") it will show days from other months too
+	multiple					| array of multiple dates
+	multipleRange			| array of multiple range dates (use only with timeRange)
+	multipleSelection		| boolean, if true calendar can use multiple selection
+	saveDate					| if set (default unset) will save a cookie for this duration.
+	numberMonths			| Have the calendar display multiple months
+	stepMonths			  | Step for next and previous arrows in months. Default: numberMonths.
+	controlMonth			| When displaying multiple months, this will be the control month. Default 1.
+	vertical					| When displaying multiple months, months can progress in a vertical or horizontal way. Horizontal is the default.
+	monthsInRow				| When displaying multiple months how many months in a horizontal row. Works both in vertical and horizontal mode. Default numberMonths
+	fdowClick				| Allow click on Days of Week 1st day
+	titleHtml				| Html you can put in title of calendar
+	noHelp					| Disables "?" button in your calendar
+	noHistory				| Disable history
+	noStatus					| Disable status bar
+	noCloseButton			| Disables "X" button in your calendar
+	disableYearNav			| Disables year navigation buttons
+	minimal					| Make calendar minimal look (disable everything that can)
+	theme						| Theme name
+	showEffect				| Name of the effect that shows calendar
+	showEffectSpeed		| Speed of the show effect
+	showEffectOnFinish	| Function that is called when the show effect action is complete
+	hideEffect				| Name of the effect that hides calendar
+	hideEffectSpeed		| Speed of the hide effect
+	hideEffectOnFinish	| Function that is called when the hide effect action is complete
+	showAfterCreation		| Shows popup calendar when created
+	maxSelection			| Maximum selected dates that allowing (default: -1 is mean that calendar hasn`t selection limit)
+	setDateToolTip			| callback function that gets a date and sets tooltip text for this date
+ loadPrefs				| true/false. Loads the preference cookie and merges saved prefs to Zapatec.Calendar.prefs (history)
+	historySize				| History size
+	hideNavPanel			| Navigation panel that contains prev/next month/year, today buttons 
+
+ One of "inputField", "displayArea" or "button" is required.
+
+ <strong>In addition to the events fired from base Zapatec.Widget class fires
+ the following events:</strong>
+
+ <b>calDateClicked</b> when date is clicked. Listener receives Date object.
+
+ <b>calDateDblclicked</b> when date is double clicked. Listener receives Date
+ object.
+
+ <b>calDateSwitched</b> when date is set programmatically. Listener receives
+ Date object.
+
+ <b>calMonthClicked</b> when month (title) is clicked. Listener receives
+ following object:
+ {
+   fullYear: [number] full year,
+   month: [number] zero-based month number (0 - 11)
+ }
+ </pre>
+</UL>
+
+
+
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>oArg</CODE> -  User configuration
+     </UL>
+   
+   
+   </UL>
+
+
+<!-- Constructor return value(s) -->
+
+<!-- End constructor return value(s) -->
+
+<!-- ADDITIONAL ATTRIBUTES -->
+
+<UL>   
+<B>Requires:</B><UL>- Zapatec.Widget Requires utils/zapatec.js</UL>
+</UL>
+
+<HR/>
+<!-- END ADDITIONAL ATTRIBUTES  -->
+
+<!-- ========= CONSTRUCTOR DETAIL END ======== -->
+
+
+<!-- ============ METHOD DETAIL START ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+      <TD COLSPAN=1><FONT SIZE="+2">
+         <B>Method Detail</B></FONT>
+      </TD>
+   </TR>
+</TABLE>
+
+<!-- One single method detail entry -->
+
+   <A NAME="_displayWeekdays"><!-- --></A>
+   <H3>_displayWeekdays</H3>
+   <PRE>void <B>_displayWeekdays</B>()</PRE>
+   
+      <UL>This function displays the week day names in the calendar header, according
+ to the current "firstDay".</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="_dragStart"><!-- --></A>
+   <H3>_dragStart</H3>
+   <PRE>void <B>_dragStart</B>(ev)</PRE>
+   
+      <UL>\internal Starts dragging the element.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="_hideCombos"><!-- --></A>
+   <H3>_hideCombos</H3>
+   <PRE>void <B>_hideCombos</B>()</PRE>
+   
+      <UL>\internal Hides all combo boxes that might be displayed.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="_init"><!-- --></A>
+   <H3>_init</H3>
+   <PRE>void <B>_init</B>(firstDay, date, last)</PRE>
+   
+      <UL>(RE)Initializes the calendar to the given date and firstDay.
+
+ This function perform the action of actually displaying the day names and
+ dates in the calendar.  But first, it checks if the passed date fits in the
+ allowed range, configured by the "minYear", "maxYear", "minMonth" and
+ "maxMonth" properties of the Calendar object.
+
+ It takes care to highlight special days (calling the
+ calendar.getDateStatus() function which can be overridden by external
+ scripts) or to highlight any dates that might be selected (for instance when
+ multiple dates is on, this function will call _initMultipleDates() to
+ highlight selected dates accordingly).
+
+ This function is highly optimized for speed, therefore the code in it is not
+ trivial and what it does might not seem obvious. :-) So, WARNING, this is
+ voodoo.  If you want to properly understand the code you should analyze it
+ line by line and try to execute it step by step; use the Venkman JS
+ debugger.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>firstDay</CODE> -  [int] the first day of week, 0 for Sunday, 1 for Monday, etc.  
+      </UL> 
+   
+     <UL><CODE>date</CODE> -  [Date] the date to initialize the calendar to     
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="_initMultipleDates"><!-- --></A>
+   <H3>_initMultipleDates</H3>
+   <PRE>void <B>_initMultipleDates</B>()</PRE>
+   
+      <UL>If "multiple dates" is selected (the calendar.multiple property) this
+ function will highlight cells that display dates that are selected.  It is
+ only called from the _init() function.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="callCloseHandler"><!-- --></A>
+   <H3>callCloseHandler</H3>
+   <PRE>void <B>callCloseHandler</B>()</PRE>
+   
+      <UL>Calls the calendar's onClose handler, if present.  Either way, this function
+ calls updateHistory() in order to update the history cookie.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="callHandler"><!-- --></A>
+   <H3>callHandler</H3>
+   <PRE>void <B>callHandler</B>()</PRE>
+   
+      <UL>Call the calendar's "onSelected" handler, if defined.  The passed arguments
+ are the date object and a string with the date formatted by the specifier in
+ calendar.dateFormat.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="callHelpHandler"><!-- --></A>
+   <H3>callHelpHandler</H3>
+   <PRE>void <B>callHelpHandler</B>()</PRE>
+   
+      <UL>Show "ABOUT" information</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="create"><!-- --></A>
+   <H3>create</H3>
+   <PRE>void <B>create</B>(_par)</PRE>
+   
+      <UL>This function creates the calendar HTML elements inside the given parent.
+ If _par is null than it creates a popup calendar inside the BODY element.
+ If _par is an element, be it BODY, then it creates a non-popup calendar
+ (still hidden).
+
+ The function looks rather complicated, but what it does is quite simple.
+ The basic calendar elements will be created, that is, a containing DIV, a
+ TABLE that contains a headers (titles, navigation bar and day names bars), a
+ body containing up to 12 months, each has 6 rows with 7 or 8 cells (this depends on whether week
+ numbers are on or off) and a footer containing the status bar.  Appropriate
+ event handlers are assigned to all buttons or to the titles and status bar
+ (for drag'n'drop).
+
+ This function also builds the time selector if the calendar is configured
+ so, and it also creates the elements required for combo boxes (years,
+ months, history).
+
+ This function does not display day names or dates.  This is done in
+ Zapatec.Calendar.prototype._init().  Therefore, by separating these 2
+ actions we can make date switching happen much faster because the _init
+ function will already have the elements in place (so we don't need to create
+ them again and again).  This was a major improvement which got in
+ the calendar v0.9.1.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>_par</CODE> -     
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="destroy"><!-- --></A>
+   <H3>destroy</H3>
+   <PRE>void <B>destroy</B>()</PRE>
+   
+      <UL>Removes the calendar object from the DOM tree and destroys it.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getNavigationPos"><!-- --></A>
+   <H3>getNavigationPos</H3>
+   <PRE>Object <B>getNavigationPos</B>()</PRE>
+   
+      <UL>This method returns the date representing the year and month shown in control month.
+ The rest part of the Date object is 1st day and zeros.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getRange"><!-- --></A>
+   <H3>getRange</H3>
+   <PRE>object <B>getRange</B>()</PRE>
+   
+      <UL>Returns range of displayed dates.
+
+ <pre>
+ Returns object:
+ {
+   from: [object] first displayed Date,
+   to: [object] last displayed Date
+ }
+ </pre></UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        Range of dates   
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="hide"><!-- --></A>
+   <H3>hide</H3>
+   <PRE>void <B>hide</B>()</PRE>
+   
+      <UL>Hides the calendar.  Also removes any "hilite" from the class of any TD
+ element.  Unregisters the document event handlers for key presses and
+ mousedown.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="hideShowCovered"><!-- --></A>
+   <H3>hideShowCovered</H3>
+   <PRE>void <B>hideShowCovered</B>()</PRE>
+   
+      <UL>This function hides or shows "windowed controls" accordingly so that the
+ calendar isn't obtured by any such control.  Historically, this function was
+ used for any browser.  It simply walks through all SELECT, IFRAME and APPLET
+ elements present in the DOM, checks if they intersect the calendar and hides
+ them if so or makes them visible otherwise.  This approacy has a number of
+ problems, the most important being that if the end-user's code contains a
+ SELECT which is already hidden and it must stay hidden, it will still be
+ made visible when the calendar closes.  The other obvious problem is that
+ there's an ugly effect generated by elements that suddenly (dis)appear when
+ you drag the calendar around the screen.
+
+ Currently this function is only used on IE5.0/Windows, browser that leaves
+ no room for a better workaround to this problem.  For IE5.5+/Windows an
+ workaround is possible, albeit amazingly ugly (WCH).  For other browsers
+ such crazy techniques are not anymore useful because the bugs related to
+ windowed controls were fixed.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="init"><!-- --></A>
+   <H3>init</H3>
+   <PRE>Object <B>init</B>(&lt;object&gt; oArg)</PRE>
+   
+      <UL>Initializes object.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>oArg</CODE> -  User configuration
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="navigateTo"><!-- --></A>
+   <H3>navigateTo</H3>
+   <PRE>Object <B>navigateTo</B>(date)</PRE>
+   
+      <UL>This method affects control month. It changes the range of displayed
+ dates so the control month contains the date passed as an argument.
+ For example if we have 3 month Calendar with second month as a control
+ and we call cal.navigateTo(new Date(2007, 10, 11)), the Calendar will show
+ October-November-December (10 is November as numeration starts with zero).</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>date</CODE> -  [Date] the date to set.
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="nextMonth"><!-- --></A>
+   <H3>nextMonth</H3>
+   <PRE>Object <B>nextMonth</B>()</PRE>
+   
+      <UL>Moves the Calendar view one month forward.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="nextYear"><!-- --></A>
+   <H3>nextYear</H3>
+   <PRE>Object <B>nextYear</B>()</PRE>
+   
+      <UL>Moves the Calendar view one year forward.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="onCloseInner"><!-- --></A>
+   <H3>onCloseInner</H3>
+   <PRE>void <B>onCloseInner</B>(cal)</PRE>
+   
+      <UL>Default onClose function</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="onHide"><!-- --></A>
+   <H3>onHide</H3>
+   <PRE>void <B>onHide</B>()</PRE>
+   
+      <UL>Set activeCalendar = null after hide effect</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>calId</CODE> -  - calendar id    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="parseDate"><!-- --></A>
+   <H3>parseDate</H3>
+   <PRE>Object <B>parseDate</B>(str, fmt)</PRE>
+   
+      <UL>Tries to identify the date represented in a string.  If successful it also
+ calls this.setDate which moves the calendar to the given date.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>str</CODE> -  [string] a date  
+      </UL> 
+   
+     <UL><CODE>fmt</CODE> -  [string] the format to try to parse \em str in
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="prevMonth"><!-- --></A>
+   <H3>prevMonth</H3>
+   <PRE>Object <B>prevMonth</B>()</PRE>
+   
+      <UL>Moves the Calendar view one month backward.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="prevYear"><!-- --></A>
+   <H3>prevYear</H3>
+   <PRE>Object <B>prevYear</B>()</PRE>
+   
+      <UL>Moves the Calendar view one year backward.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="printWith2Time"><!-- --></A>
+   <H3>printWith2Time</H3>
+   <PRE>Object <B>printWith2Time</B>(&lt;Object&gt; date, date1, &lt;Object&gt; format)</PRE>
+   
+      <UL>Print date with timeRange paramiter</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>date</CODE> -   
+      </UL> 
+   
+     <UL><CODE>format</CODE> - 
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="reconfigure"><!-- --></A>
+   <H3>reconfigure</H3>
+   <PRE>void <B>reconfigure</B>(&lt;object&gt; oArg)</PRE>
+   
+      <UL>Reconfigures the calendar with new config options after it was initialized.
+ May be used to change look or behavior of the calendar.
+ In the argument pass only values for changed config options.
+ There is no need to pass config options that were not changed.
+
+ <pre>
+
+
+ </pre></UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>oArg</CODE> -  Changes to user configuration    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="refresh"><!-- --></A>
+   <H3>refresh</H3>
+   <PRE>void <B>refresh</B>()</PRE>
+   
+      <UL>"refresh()" isn't a good name for it: this function _destroys_ the calendar
+ object and creates another one with the same parameters.  This comes in
+ handy for the calendar wizard where we need to reconstruct the calendar for
+ virtually any property change.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="reinit"><!-- --></A>
+   <H3>reinit</H3>
+   <PRE>void <B>reinit</B>()</PRE>
+   
+      <UL>Refreshes the calendar.  Useful if the "disabledHandler" function is
+ dynamic, meaning that the list of disabled date can change at runtime.  Just
+ call this function if you think that the list of disabled dates should
+ change.
+
+ This function simply calls _init() using the current firstDay and the
+ current calendar date.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="reparent"><!-- --></A>
+   <H3>reparent</H3>
+   <PRE>void <B>reparent</B>(new_parent)</PRE>
+   
+      <UL>Moves the calendar element to a different section in the DOM tree (changes
+ its parent).  This might be useful for flat calendars.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>new_parent</CODE> -  [HTMLElement] the new parent for the calendar.    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="selectDate"><!-- --></A>
+   <H3>selectDate</H3>
+   <PRE>Object <B>selectDate</B>(&lt;Object&gt; dates)</PRE>
+   
+      <UL>Selects the passed date. If date is already selected method just returns true.
+ Passing a range is done using array with two elements, but range should go inside the array.
+ In this case if at least one date is handled correctly method returns true.
+ So for example the following code is legal:
+  cal.selectDate(date); //select one date
+  cal.selectDate([date1, date2]); //select array of dates
+  cal.selectDate([[rangeStartDate, rangeEndDate]]); //select date range
+  cal.selectDate([[rangeStartDate1, rangeEndDate1], [rangeStartDate2, rangeEndDate2]]); //selct two date ranges</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>dates</CODE> -  - date ranges
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setCookie"><!-- --></A>
+   <H3>setCookie</H3>
+   <PRE>void <B>setCookie</B>()</PRE>
+   
+      <UL>Set cookie, if it was saved.
+ no paramiters</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setDate"><!-- --></A>
+   <H3>setDate</H3>
+   <PRE>Object <B>setDate</B>(date, justInit)</PRE>
+   
+      <UL>Moves the calendar to the specified date.  If \em date is not passed, then
+ the "today" date is assumed.  This function does range checking and displays
+ an error in the status bar if the new date is not allowed by the configured
+ calendar range.  Otherwise, it simply calls _init() with the new date.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>date</CODE> -  [Date, optional] the date object.
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setDateFormat"><!-- --></A>
+   <H3>setDateFormat</H3>
+   <PRE>void <B>setDateFormat</B>(str)</PRE>
+   
+      <UL>Customizes the date format that will be reported to the onSelect handler.
+ The format string is described in Zapatec.Date.print().</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>str</CODE> -  [string] the date format.    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setDateToolTipHandler"><!-- --></A>
+   <H3>setDateToolTipHandler</H3>
+   <PRE>void <B>setDateToolTipHandler</B>(unaryFunction)</PRE>
+   
+      <UL>Call this in order to install a function handler that returns a tooltip for
+ the given date.  For example:
+
+ \code
+function myHandler(date) {
+		var str = Zapatec.Date.print(date, "%Y/%m/%d");
+		if (str == "1979/08/03") {
+			return "Happy birthday Mishoo! :D";
+		}
+		return str;
+	}
+	calendar.setDateToolTipHandler(myHandler);
+ \endcode
+
+ The tooltip handler is a "unary" function (receives one argument).  The
+ argument passed is a date object and the function should return the tooltip
+ for that date.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>unaryFunction</CODE> -  [function] your tooltip handler, as described above    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setDisabledHandler"><!-- --></A>
+   <H3>setDisabledHandler</H3>
+   <PRE>Object <B>setDisabledHandler</B>(unaryFunction)</PRE>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setFirstDayOfWeek"><!-- --></A>
+   <H3>setFirstDayOfWeek</H3>
+   <PRE>void <B>setFirstDayOfWeek</B>(firstDay)</PRE>
+   
+      <UL>Configures the "firstDay" parameter of the calendar.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>firstDay</CODE> -  [int] the new first day of week, 0 for Sunday, 1 for Monday, etc.    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setMultipleDates"><!-- --></A>
+   <H3>setMultipleDates</H3>
+   <PRE>void <B>setMultipleDates</B>(multiple)</PRE>
+   
+      <UL>This function sets up the cal.multiple property initially when the flat or popup calendar is created.
+ If there are dates to be displayed or added to the first time, this property will be filled with those
+ dates at the beginning.
+
+ multiple -- [Array] - stores the current dates for future use and appending of additional dates</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setRange"><!-- --></A>
+   <H3>setRange</H3>
+   <PRE>void <B>setRange</B>(A, Z)</PRE>
+   
+      <UL>Configures a range of allowed dates for the calendar.  Currently, this
+ function supports setting a range on a "month granularity".  This means,
+ using it you can't disable part of a month.  Both parameters are numeric and
+ can be float.  The range is "inclusive".
+
+ This function might seem somehow complicated, but it's designed in a way
+ that keeps backwards compatibility with the calendar v0.9.6.
+
+ -# when the end points are integers, the full years will be included.  That
+	 is, if you call calendar.setRange(1999, 2005) then only dates between and
+	 including 1999/01/01 and 2005/12/31 will be allowed.
+ -# when the end points are floats, the decimal part specifies the month.
+	 Therefore, calendar.setRange(1999.03, 2005.05) will allow dates between
+	 and including 1999/03/01 (March 1) and 2005/05/31 (May 31).
+
+ The above statements mean that the following two lines are equivalent:
+
+ \code
+	calendar.setDate(1999, 2005);		 // or
+	calendar.setDate(1999.01, 2005.12);
+ \endcode</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>A</CODE> -  [number] the range start point  
+      </UL> 
+   
+     <UL><CODE>Z</CODE> -  [number] the range end point    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setTtDateFormat"><!-- --></A>
+   <H3>setTtDateFormat</H3>
+   <PRE>void <B>setTtDateFormat</B>(str)</PRE>
+   
+      <UL>Customizes the tooltip date format.  See
+ Zapatec.Calendar.prototype.setDateFormat() for a description of the \em str
+ format.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>str</CODE> -  [string] the "tooltip" date format    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="show"><!-- --></A>
+   <H3>show</H3>
+   <PRE>void <B>show</B>()</PRE>
+   
+      <UL>Displays a hidden calendar.  It walks quickly through the HTML elements and
+ makes sure that they don't have "hover" or "active" class names that might
+ be there from a previous time the same calendar was displayed (exept rowhilite ;)).
+ This function also calls updateWCH() and hideShowCovered() to workaround
+ miserable IE bugs.
+
+ If the calendar is a popup calendar and doesn't have the "noGrab" property
+ set, this function also adds document event handlers to intercept key events
+ or to close the calendar when one clicks outside it.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="showAt"><!-- --></A>
+   <H3>showAt</H3>
+   <PRE>void <B>showAt</B>(x, y)</PRE>
+   
+      <UL>Shows the calendar at a given absolute position (beware that, depending on
+ the calendar element style -- position property -- this might be relative to
+ the parent's containing rectangle).</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>x</CODE> -  [int] the X position  
+      </UL> 
+   
+     <UL><CODE>y</CODE> -  [int] the Y position    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="showAtElement"><!-- --></A>
+   <H3>showAtElement</H3>
+   <PRE>Object <B>showAtElement</B>(el, opts)</PRE>
+   
+      <UL>This function displays the calendar near a given "anchor" element, according
+ to some rules passed in \em opts.  The \em opts argument is a string
+ containing one or 2 letters.  The first letter decides the vertical
+ alignment, and the second letter decides the horizontal alignment relative
+ to the anchor element.  Following we will describe these options; in parens
+ we will use simple descriptions like "top to bottom" which means that the
+ top margin of the calendar is aligned with the bottom margin of the object.
+
+ \b Vertical align:
+
+ - T -- the calendar is completely above the element (bottom to top)
+ - t -- the calendar is above the element but might overlap it (bottom to bottom)
+ - C -- the calendar is vertically centered to the element
+ - b -- the calendar is below the element but might overlap it (top to top)
+ - B -- the calendar is completely below the element (top to bottom)
+
+ \b Horizontal align (defaults to 'l' if no letter passed):
+
+ - L -- the calendar is completely to the left of the element (right to left)
+ - l -- the calendar is to the left of the element but might overlap it (right to right)
+ - C -- the calendar is horizontally centered to the element
+ - r -- the calendar is to the right of the element but might overlap it (left to left)
+ - R -- the calendar is completely to the right of the element (left to right)</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>el</CODE> -  [HTMLElement] the anchor element  
+      </UL> 
+   
+     <UL><CODE>opts</CODE> -  [string, optional] the align options, as described above.  Defaults to "Bl" if nothing passed.
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="showHint"><!-- --></A>
+   <H3>showHint</H3>
+   <PRE>void <B>showHint</B>(text)</PRE>
+   
+      <UL>Displays a hint in the status bar</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>text</CODE> -  [string] what to display    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="submitFlatDates"><!-- --></A>
+   <H3>submitFlatDates</H3>
+   <PRE>void <B>submitFlatDates</B>()</PRE>
+   
+      <UL>Call the calendar's callback function, if defined.  The passed argument
+ is the date object. This is a public function meant to be invoked by the user so that s/he can
+ have more controls on what to do with the dates selected.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="toggleMultipleDate"><!-- --></A>
+   <H3>toggleMultipleDate</H3>
+   <PRE>Object <B>toggleMultipleDate</B>(date, date1)</PRE>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="updateHistory"><!-- --></A>
+   <H3>updateHistory</H3>
+   <PRE>void <B>updateHistory</B>()</PRE>
+   
+      <UL>This function updates the calendar history and saves the cookie.  The
+ history is a string containing date and time formatted as "%Y/%m/%d/%H/%M"
+ (that is, all time parts separated by slashes, in a "most significant to
+ least significant order").  Further, such formats are separated by commas,
+ and the current calendar date is added the first, then the cookie saved.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="updateWCH"><!-- --></A>
+   <H3>updateWCH</H3>
+   <PRE>void <B>updateWCH</B>(other_el)</PRE>
+   
+      <UL>Updates the calendar "WCH" (windowed controls hider).  A WCH is an
+ "invention" (read: "miserable hack") that works around one of the most
+ common and old bug in Internet Explorer: the SELECT boxes or IFRAMES show on
+ top of any other HTML element.  This function makes sure that the WCH covers
+ correctly the calendar element and another element if passed.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>other_el</CODE> -  [HTMLElement, optional] a second element that the WCH should cover.    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!_add_evs"><!-- --></A>
+   <H3>_add_evs</H3>
+   <PRE>&lt;static&gt; void <B>_add_evs</B>(el)</PRE>
+   
+      <UL>\internal Adds a set of events to make some element behave like a button.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>el</CODE> -  [HTMLElement] reference to your element.    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!_checkCalendar"><!-- --></A>
+   <H3>_checkCalendar</H3>
+   <PRE>&lt;static&gt; Object <B>_checkCalendar</B>(ev)</PRE>
+   
+      <UL>This gets called when the user presses a mouse button anywhere in the
+ document, if the calendar is shown.  If the click was outside the open
+ calendar this function closes it and stops the event from propagating.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>ev</CODE> -  [Event] the event object.  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        false if the event is stopped. 
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!_del_evs"><!-- --></A>
+   <H3>_del_evs</H3>
+   <PRE>&lt;static&gt; Object <B>_del_evs</B>(el)</PRE>
+   
+      <UL>\internal This function undoes what Zapatec.Calendar._add_evs did, therefore
+ unregisters the event handlers.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>el</CODE> -  [HTMLElement] reference to your element.
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!_keyEvent"><!-- --></A>
+   <H3>_keyEvent</H3>
+   <PRE>&lt;static&gt; Object <B>_keyEvent</B>(ev)</PRE>
+   
+      <UL>This function handles keypress events that occur while a popup calendar is
+ displayed.  The implementation is quite complicated; this function calls
+ cellClick in order to set the new date as if it was clicked.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>ev</CODE> -  [Event] the event object  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        false 
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!calDragEnd"><!-- --></A>
+   <H3>calDragEnd</H3>
+   <PRE>&lt;static&gt; Object <B>calDragEnd</B>(ev)</PRE>
+   
+      <UL>Gets called when the drag and drop operation is finished; thus, at
+ "onmouseup".  This function unregisters D'n'D event handlers and calls
+ Zapatec.Calendar.hideShowCovered() which repaints as appropriate any
+ "windowed controls" that might have been hidden by the end user moving the
+ calendar. (note, this is only for IE5; for IE5.5 there are better--albeit
+ uglier--workarounds).</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>ev</CODE> -  [Event] the event object  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        false 
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!calDragIt"><!-- --></A>
+   <H3>calDragIt</H3>
+   <PRE>&lt;static&gt; Object <B>calDragIt</B>(ev)</PRE>
+   
+      <UL>Called at mouseover and/or mousemove on document, this function repositions
+ the calendar according to the current mouse position.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>ev</CODE> -  [Event] The Event object  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        false 
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!cellClick"><!-- --></A>
+   <H3>cellClick</H3>
+   <PRE>&lt;static&gt; Object <B>cellClick</B>(el, ev)</PRE>
+   
+      <UL>The generic "click" handler.  This function handles actions on any kind of
+ buttons that appear inside our calendar.  It determines the button type by
+ querying \em el.navtype.  The following types of objects are supported:
+
+ - Date cells (navtype is undefined).  The function will select that date,
+	add appropriate class names and remove them from the previously selected
+	date.  If the date in the calendar \em has \em changed, it calls the
+	calendar's onSelect handler (see the constructor).  If multiple dates is
+	enabled, it will not unselect previously selected date but rather maintain
+	an array of dates which will be avaliable to the onSelect or onClose
+	handler.
+ - The Close button (navtype == 200).  If this is clicked, then the
+	calendar's onClose handler is called immediately.
+ - The Today button (navtype == 0).  The calendar will jump to the "today"
+	date and time, unless it's already there.
+ - The About button (navtype == 400).  It will display an alert with the
+	"about message", as defined in the translation file.
+ - Previous year (navtype == -2)
+ - Previous month (navtype == -1)
+ - Next month (navtype == 1)
+ - Next year (navtype == 2)
+ - Day names (navtype == 100).  If any of them is clicked, the calendar will
+	display that day as the first day of week.  It calls the "onFDOW" event
+	handler if defined.
+ - Time parts (navtype == 50).  If any of them is clicked, this function will
+	determine if it's a click or shift-click, and will take the appropriate
+	action (simple click means add 1, shift-click means substract 1 from that
+	time part).  Then it calls onUpdateTime() to refresh the display.
+ - Week number clicked (navtype == 150)
+
+ - Time scroll buttons (navtype == 201 or navtype == 202).  If such buttons
+	are clicked, the time part involved is determined and it is incremented or
+	decremented with the current step (default: 5).  201 is for "add", 202 for
+	"substract".</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>el</CODE> -  [HTMLElement] the object being clicked on
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!compareDates"><!-- --></A>
+   <H3>compareDates</H3>
+   <PRE>&lt;static&gt; Object <B>compareDates</B>(date1, date2)</PRE>
+   
+      <UL>Compare two dates in either ascending or descending order. To be used for
+ the multiple dates feature. This function is passed as an argument to the
+ sort routine which calls it to compare dates.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>date1</CODE> -  [date] first date  
+      </UL> 
+   
+     <UL><CODE>date2</CODE> -  [date] second date
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!dayMouseDown"><!-- --></A>
+   <H3>dayMouseDown</H3>
+   <PRE>&lt;static&gt; Object <B>dayMouseDown</B>(ev)</PRE>
+   
+      <UL>Called when the mouse button is pressed upon a button.  The name of this
+ function is so for historical reasons; currently, this function is used for
+ \em any type of buttons used in the calendar, not only "days".
+
+ This function does quite some things.  It checks if the clicked cell is the
+ title bar or the status bar, in which case it starts the calendar dragging
+ mechanism (cal._dragStart()).  If the cell is a time part, then it registers
+ Zapatec.Calendar.tableMouseOver() event handler on the document.  If the
+ cell is a "navigation" button (next/prev year or month, or today) then a
+ timeout is created that will show the appropriate combo box if the button is
+ not quickly depressed.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>ev</CODE> -  [Event] the event object  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        false 
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!dayMouseOut"><!-- --></A>
+   <H3>dayMouseOut</H3>
+   <PRE>&lt;static&gt; Object <B>dayMouseOut</B>(ev)</PRE>
+   
+      <UL>Gets called when the mouse leaves a button.  This function "undoes" what
+ dayMouseOver did, that is, it removes the "rowhilite" class from the
+ containing TR and restores the status bar display to read "Select date".</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>ev</CODE> -  [Event] the event object.  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        false 
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!dayMouseOver"><!-- --></A>
+   <H3>dayMouseOver</H3>
+   <PRE>&lt;static&gt; Object <B>dayMouseOver</B>(ev)</PRE>
+   
+      <UL>This function gets called at "onmouseover" events that trigger on any kind
+ of button, like dates, navigation buttons, etc.  Basically, the function
+ computes and caches the tooltip (if it's a date cell for instance) and
+ displays it in the status bar.  If the cell is not a navigation button, it
+ will also add "rowhilite" class to the containing TR element.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>ev</CODE> -  [Event] the event object.  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        false 
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!deselectDate"><!-- --></A>
+   <H3>deselectDate</H3>
+   <PRE>&lt;static&gt; void <B>deselectDate</B>(&lt;Object&gt; dates)</PRE>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>dates</CODE> -     
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!findHist"><!-- --></A>
+   <H3>findHist</H3>
+   <PRE>&lt;static&gt; Object <B>findHist</B>(el)</PRE>
+   
+      <UL>Similar to findMonth() but for the history combo.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!findMonth"><!-- --></A>
+   <H3>findMonth</H3>
+   <PRE>&lt;static&gt; Object <B>findMonth</B>(el)</PRE>
+   
+      <UL>Given an HTML element, this function determines if it's part of the "months"
+ combo box and if so it returns the element containing the month name.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>el</CODE> -  [HTMLElement] some element (usually that triggered onclick)  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        [HTMLElement] element with the month 
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!findYear"><!-- --></A>
+   <H3>findYear</H3>
+   <PRE>&lt;static&gt; Object <B>findYear</B>(el)</PRE>
+   
+      <UL>Similar to the above functions, but for the years combo.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!i18nOld"><!-- --></A>
+   <H3>i18nOld</H3>
+   <PRE>&lt;static&gt; Object <B>i18nOld</B>(str, type)</PRE>
+   
+      <UL>Translate a string according to the currently loaded language table.  The
+ \em type variable can be null or missing, or can have one of the following
+ values: "dn", "sdn", "mn", "smn".
+
+ -# if \em type is null or missing, the given \em str will be looked up in
+	 the translation table.  If a value is found, it is returned.  Otherwise,
+	 the string is looked up in the English table (if present).  If still not
+	 found, the value of \em str itself is returned.
+ -# if \em type is passed, then the value of \em str is looked up in one of
+	 the following internal arrays, depending on the value of \em type:
+		 - DN (day name)
+		 - SDN (short day name)
+		 - MN (month name)
+		 - SMN (short month name)</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>str</CODE> -  [string] ID of translation text (can be the English text)  
+      </UL> 
+   
+     <UL><CODE>type</CODE> -  [string, optional] domain to search through   
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        the translation according to the current language. 
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!loadPrefs"><!-- --></A>
+   <H3>loadPrefs</H3>
+   <PRE>&lt;static&gt; void <B>loadPrefs</B>(oConfig)</PRE>
+   
+      <UL>Loads the preference cookie and merges saved prefs to Zapatec.Calendar.prefs.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!savePrefs"><!-- --></A>
+   <H3>savePrefs</H3>
+   <PRE>&lt;static&gt; void <B>savePrefs</B>(calendarId)</PRE>
+   
+      <UL>Writes the preferences cookie.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>calendarId</CODE> -  the calendar id    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!showHistoryCombo"><!-- --></A>
+   <H3>showHistoryCombo</H3>
+   <PRE>&lt;static&gt; Object <B>showHistoryCombo</B>()</PRE>
+   
+      <UL>Same as the above, this function displays the history combo box for the
+ active calendar.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!showMonthsCombo"><!-- --></A>
+   <H3>showMonthsCombo</H3>
+   <PRE>&lt;static&gt; Object <B>showMonthsCombo</B>()</PRE>
+   
+      <UL>This function displays the months combo box.  It doesn't need any parameters
+ because it uses the static activeCalendar variable which maintains a reference to the
+ last calendar that was clicked in the page.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!showYearsCombo"><!-- --></A>
+   <H3>showYearsCombo</H3>
+   <PRE>&lt;static&gt; Object <B>showYearsCombo</B>(fwd)</PRE>
+   
+      <UL>Displays the years combo box for the active calendar.  The "fwd" parameter
+ tells it if it should display future (right) or past (left) years.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>fwd</CODE> -  [boolean] true if it's for the right combo (future), false  otherwise.
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!tableMouseDown"><!-- --></A>
+   <H3>tableMouseDown</H3>
+   <PRE>&lt;static&gt; Object <B>tableMouseDown</B>(ev)</PRE>
+   
+      <UL>This is a simple function that stops a "mousedown" related to the calendar's
+ table element.  This helps avoiding text selection in certain browsers (most
+ notably, Safari, since Mozilla already has a better way).</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>ev</CODE> -  [Event] the Event object  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        false 
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!tableMouseOver"><!-- --></A>
+   <H3>tableMouseOver</H3>
+   <PRE>&lt;static&gt; Object <B>tableMouseOver</B>(ev)</PRE>
+   
+      <UL>Event handler that gets called when the end-user moves the mouse over the
+ document.
+
+ This function is pretty complicated too.  It adds hover/active state class
+ to elements that are highlighted and/or clicked.  It determines whether one
+ is trying to modify the time by "drag'n'drop" (the original interface
+ implemented by the calendar).  Finally, it determines if the
+ mouse is over combo box items, also adding/removing hover states and setting
+ some calendar variables with reference to the element involved.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>ev</CODE> - 
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="!s!tableMouseUp"><!-- --></A>
+   <H3>tableMouseUp</H3>
+   <PRE>&lt;static&gt; Object <B>tableMouseUp</B>(ev)</PRE>
+   
+      <UL>This is an event handler that gets called when the mouse button is released
+ upon the document.  The name (tableMouseUp) is because of historic reasons
+ (in the initial calendar versions this event was triggered by the calendar
+ table, but now it's the document who does it).
+
+ This function does a number of things.  It determines which is the element
+ that was actually clicked.  Note that the "mouseup" event usually means
+ "something was clicked"; it's "mouseup" who fires the "onclick" event, not
+ "mousedown" ;-).  So, if the clicked element is a member of one of the combo
+ boxes such as month, year or history, then the appropriate action is taken
+ (switch month, year or go to history date).
+
+ Also, the Zapatec.Calendar.cellClick() function is called, which further
+ examines the target element and might do other things.
+
+ Finally, this handler deregisters itself (it's automatically enabled at
+ "mousedown" on document), stops the event propagation, sets the static _C
+ variable to \em null (meaning "no calendar is currently in use").</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>ev</CODE> -  [Event] the event object  
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+   <UL>
+   <B>Returns:</B>
+        <UL>
+        false 
+        </UL>
+   </UL>
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+
+
+<!-- ============ METHOD DETAIL END ========== -->
+
+<!-- ========= END OF CLASS DATA ========= -->
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">  <A HREF="../overview-summary-calendar-core.js.html"><FONT CLASS="NavBarFont1"><B>File</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../overview-tree.html"><FONT CLASS="NavBarFont1"><b>Tree</b></FONT></A>&nbsp;</TD>
+  <!--TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"-->    <!--A HREF="deprecated-list.html"--><!--FONT CLASS="NavBarFont1">Deprecated</FONT--><!--/A--><!--&nbsp;</TD-->
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>Zapatec Calendar</B>
+</EM>
+</TD
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../Zapatec/Busycal.html"><B>PREV CLASS</B></A><!-- 
+   NEXT CLASS 
+-->
+&nbsp;<A HREF="../"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;
+<SCRIPT>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="../allclasses-noframe.html" TARGET=""><B>All Classes</B></A>
+</NOSCRIPT>
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+
+<!-- =========== END OF NAVBAR =========== -->
+
+<HR>
+<FONT SIZE="-1">
+
+</FONT>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Thu May 21 12:19:39 2009</div>
+</BODY>
+</HTML>

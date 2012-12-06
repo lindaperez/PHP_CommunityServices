@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+	<style>
+	.in{
+		display:inline;
+	}
+	</style>
+		<meta charset="utf-8">
+		<title>Prueba Cliente</title>
+		<script type="text/javascript" language="javascript" src="scripts/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" language="javascript" src="scripts/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" language="javascript" src="scripts/jquery.tools.min.js"></script>
+		<script type="text/javascript" language="javascript" src="scripts/jquery-impromptu.4.0.min.js"></script>
+        <script type="text/javascript">
+			function getEstudiantes(){
+		
+				flag = true;
+				$.getJSON("http://www.cctds.dex.usb.ve/SC/wsBusqueda.php?jsoncallback=?", {sede:"Sartenejas", filtro:"estudiante", carnet:"99-31546"}, function(data) {
+					html ="";
+					$.each(data, function(i, item) {
+						if(parseInt(item.Errores)>1){
+							html += '<p> Errores: '+(item.Errores-1)+'</p>';
+							flag = false;
+						}else{
+							if(flag){
+								if(i==0){
+									html += '<p> Total: '+item.total+'</p>';
+								}else{
+									html += '<li> Estudiante<br><ul>'						
+										
+										html += '<li> Nombre: '+ item.nombre+'</li>'
+										html += '<li> Apellido: '+ item.apellido+'</li>'
+										html += '<li> Usbid: '+ item.usbid+'</li>'
+										html += '<li> Carnet: '+ item.carnet+'</li>'
+										html += '<li> Carrera: '+ item.carrera+'</li>'
+										html += '<li> Proyecto: '+ item.proyecto+'</li>'
+										html += '<li> Tutor: '+ item.tutor+'</li>'
+										html += '<li> Fecha de Inscripcion: '+ item.fecha_inscip+'</li>'
+										html += '<li> Estado: '+ item.estado+'</li>'
+									html += '</ul></li>';	
+								}
+							}else{
+								if(i>1)
+									html += '<li> Parametro: '+item.paramentroInvalido+'</p></li>';
+							}
+						}
+					});
+					$(html).appendTo("#ListaEstudiante");	
+				});
+			}
+			function getTutores(){
+		
+				flag = true;
+				$.getJSON("http://www.cctds.dex.usb.ve/SC/wsBusqueda.php?jsoncallback=?", {sede:"Sartenejas", filtro:"tutor"}, function(data) {
+					html ="";
+					$.each(data, function(i, item) {
+						if(parseInt(item.Errores)>1){
+							html += '<p> Errores: '+(item.Errores-1)+'</p>';
+							flag = false;
+						}else{
+							if(flag){
+								if(i==0){
+									html += '<p> Total: '+item.total+'</p>';
+								}else{
+									html += '<li> Tutor<br><ul>'
+										html += '<li> Nombre: '+ item.nombre+'</li>'
+										html += '<li> Apellido: '+ item.apellido+'</li>'
+										html += '<li> Usbid: '+item.usbid+'</li>'
+										html += '<li> Estudiantes totales tutoreados: '+ item.est_total_tutoreados+'</li>'
+									html += '</ul></li>';	
+								}	
+							}else{
+								if(i>1)
+									html += '<li> Parametro: '+item.paramentroInvalido+'</p></li>';
+							}
+						}
+					});
+					$(html).appendTo("#ListaTutores");	
+				});
+			}
+			
+			function getProyecto(){
+				
+				flag = true;
+				$.getJSON("http://www.cctds.dex.usb.ve/SC/wsBusqueda.php?jsoncallback=?", {sede:"Sartenejas", filtro:"proyecto"}, function(data) {
+					html ="";
+					
+					$.each(data, function(i, item) {
+						if(parseInt(item.Errores)>1){
+							html += '<p> Errores: '+(item.Errores-1)+'</p>';
+							flag = false;
+						}else{
+							if(flag){
+								if(i==0){
+									html += '<p> Total: '+item.total+'</p>';
+								}else{
+									html += '<li> Proyecto <br><ul>'
+										html += '<li> Codigo: '+item.codigo+'</li>'
+										html += '<li> Titulo: '+ item.titulo+'</li>'
+										html += '<li> Tipo: '+ item.tipo+'</li>'
+										html += '<li> Estudiantes totales que han inscrito el proyecto: '+ item.est_totales_insc+'</li>'
+									html += '</ul></li>';	
+								}		
+							}else{
+								if(i>1)
+									html += '<li> Parametro: '+item.paramentroInvalido+'</p></li>';
+							}
+						}
+					});
+					
+					$(html).appendTo("#ListaPasantias");	
+				});
+				
+			}
+		</script>
+	</head>
+
+	<body>
+		<!-- Consulta recursos -->
+		<div data-role="page" id="consulta">
+			<div data-role="content" id="lista">
+				<ol id="ListaEstudiante"></ol>
+				<ol id="ListaTutores"></ol>
+				<ol id="ListaPasantias"></ol>
+		   </div>
+		</div>
+		<script>
+		getProyecto();
+		//getTutores();
+		//getEstudiantes();
+		</script>
+		<!------- Consulta O/S -->
+
+	</body>
+</html>
+
+
