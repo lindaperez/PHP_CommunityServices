@@ -59,7 +59,7 @@ include_once("vHeader.php");
 					}
 					if ($_SESSION[proy_aprobado][$i]=="SI" || $_SESSION[proy_aprobado][$i]==" "){
 						echo "<a href='cGenerarConstanciaIns.php?id=".$_SESSION[id_inscripcion][$i]."'>".mostrarImagen('constancia')."</a>";
-echo "<a href='cIntegracion.php'>".mostrarImagen('gsc')."</a>";
+echo "<a href='cIntegracion.php?cod=".$_SESSION[cod_proyecto][$i]."'>".mostrarImagen('gsc')."</a>";
 					}
 					if ($_SESSION[proy_aprobado][$i]=="NO"){
 						echo mostrarImagen('alerta'); echo "<span class=rojo >Usted debe pasar por la CCTDS</span>";
@@ -213,7 +213,7 @@ if (isset($_SESSION['inscrito']) and !$_SESSION['inscrito'] and $_SESSION[horas]
 							<li class="parrafo"><a href="vEspecificarRoles.php">Especificar Roles</a></li><? 
 						}?>
 						<li class="parrafo"><a href="vEspecificarFechasTope.php">Especificar Fechas Tope</a></li>
-					<li class="parrafo"><a href="vCorreo.php">Respaldo del Sistema</a></li>						
+					<li class="parrafo"><a href="vCorreo.php">Respaldo del Sistema</a></li> 						
 					</ul>
 				</li>
 				
@@ -233,14 +233,14 @@ if (isset($_SESSION['inscrito']) and !$_SESSION['inscrito'] and $_SESSION[horas]
 		}elseif(isCoordinacion()){
 			?>
 			<li class="parrafo"><a href="vBuscarProyecto.php">B&uacute;squedas y Reportes</a></li>
-			<li class="parrafo"><a href="#">Actualizar Datos Personales</a></li>
 			<?
 		//  <li class="parrafo"><a href="vActualizarDatos.php">Actualizar Datos Personales</a></li>
 		}elseif(isDepartamento()){
 			?>
-			<li class="parrafo"><a href="vBuscarProyecto.php">B&uacute;squedas y Reportes</a></li>
-			<li class="parrafo"><a href="#">Actualizar Datos Personales</a></li>	
+			<li class="parrafo"><a href="vBuscarProyecto.php">B&uacute;squedas y Reportes</a></li>	
 			<?
+			
+			//<li class="parrafo"><a href="#">Actualizar Datos Personales</a></li>
 		}else{		//Se muestran las opciones de miembros USB
 			?>
 			<li class="parrafo">

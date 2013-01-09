@@ -87,4 +87,19 @@ header("Content-Type: text/html; charset=utf8");
 	<?php if ($_SESSION['db_error']!=""): ?>
 		<div id="message_db_error"><?php echo $_SESSION['db_error'];?></div>
 	<?php $_SESSION['db_error']=""; endif; ?>
+
+
+
+	<script type="text/javascript" src="../tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+
+
+	<script type="text/javascript">
+	tinyMCE.init({
+	tinyMCE.init({
+		mode : "exact",
+		elements : "direccion_ind",
+		theme : "simple"
+		});
+	</script>	
+
 	<!-- END Header -->

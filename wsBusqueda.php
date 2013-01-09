@@ -121,7 +121,7 @@ function verificarParametros ($filtro,$params){
 		$ver_usb = 0;
 	}elseif($busqueda_por == 'estudiante'){
 		$por_estudiante = 1;
-		$ver_usb = 0;
+		$ver_usb = 1;
 	}elseif($busqueda_por == 'tutor'){
 		$por_tutor = 1;
 		$ver_usb = 1;

@@ -6,7 +6,7 @@ $path='/home/coordpsc/frecuencia.txt';
 
 $fp = fopen($path,'w');
 
-$cont=$frecuencia.PHP_EOL."2 years ago".PHP_EOL.$email_to;
+$cont=$frecuencia.PHP_EOL."2 years ago".PHP_EOL.$email_to.PHP_EOL;
 
 fwrite($fp, $cont);
 fclose($fp);

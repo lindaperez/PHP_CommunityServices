@@ -297,6 +297,7 @@ include_once("vHeader.php");
 						<option value="">Todos</option>
 						<option value="SI" <? echo ($_REQUEST['byest_culminado']=='SI')?'selected="selected"':'' ?>>Culminados</option>
 						<option value="NO" <? echo ($_REQUEST['byest_culminado']=='NO')?'selected="selected"':'' ?>>No Culminados</option>
+						<option value="SI_NV" <? echo ($_REQUEST['culminado']=='NO')?'selected="selected"':'' ?>>Culminados sin Validar</option>
 					</select>
 				</div>
                                 <div class="box">
@@ -650,7 +651,7 @@ include_once("vHeader.php");
 				<? if($por_proyecto): ?>
 				<h2>Listado de proyectos (por inscripciones)</h2>
 				<? elseif($por_estudiante): ?>
-				<h2>Listado de Estudiagjhntes</h2>
+				<h2>Listado de Estudiantes</h2>
 				<? elseif($por_tutor): ?>
 				<h2>Listado de Tutores</h2>
 				<? endif; ?>

@@ -84,7 +84,7 @@
 			function getProyecto(){
 				
 				flag = true;
-				$.getJSON("http://www.cctds.dex.usb.ve/SC/wsBusqueda.php?jsoncallback=?", {sede:"Sartenejas", filtro:"proyecto"}, function(data) {
+				$.getJSON("http://www.cctds.dex.usb.ve/SC/wsBusqueda.php?jsoncallback=?", {sede:"Sartenejas", filtro:"proyecto",culminado:"SI"}, function(data) {
 					html ="";
 					
 					$.each(data, function(i, item) {

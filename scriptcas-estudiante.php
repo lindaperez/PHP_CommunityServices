@@ -67,10 +67,10 @@
 			   
 			   $_SESSION[usuario_validado]=1;
 			   //$_SESSION[USBID]="08-10437";
-			   $_SESSION[USBID]="07-41393";
+			   $_SESSION[USBID]="03-36606";
 			   //$_SESSION[USBID]="06-40109";
-            $_SESSION[nombres]="Yenny";
-            $_SESSION[csrf] = sha1($_SESSION[USBID].date("Ymd H:i:s"));
+				$_SESSION[nombres]="Yenny";
+				$_SESSION[csrf] = sha1($_SESSION[USBID].date("Ymd H:i:s"));
 			   $_SESSION[apellidos]="Villalba"; 
 			   $_SESSION[cedula]="11";
 			   $_SESSION[carrera]="Ingenieria de Computacion";

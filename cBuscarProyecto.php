@@ -499,8 +499,9 @@ if( !empty($aprobado) )      $constrains .= " AND aprobado = '".$aprobado."' ";
 if( !empty($culminado) )     $constrains .= " AND culminado = '".$culminado."' ";
 
 // restricciones por estudiante
-if( $byest_culminado == 'SI')$constrains .= " AND (i.culminacion_validada = 'SI' OR (i.culminacion_validada = '' AND fecha_fin_real != '0000-00-00'))";
-if( $byest_culminado == 'NO')$constrains .= " AND i.culminacion_validada = '' AND fecha_fin_real='0000-00-00'"; 
+if( $byest_culminado == 'SI')$constrains .= " AND i.culminacion_validada = 'SI' ";
+if( $byest_culminado == 'NO')$constrains .= " AND i.culminacion_validada = '' AND fecha_fin_real='0000-00-00' "; 
+if( $byest_culminado == 'SI_NV')$constrains .= " AND i.culminacion_validada = '' AND fecha_fin_real != '0000-00-00' "; 
 if( $inscrito == 'SI')       $constrains .= " AND i.aprobado = 'SI' ";
 if( $inscrito == 'NO')       $constrains .= " AND i.aprobado = '' "; 
 if( !empty($desde_est) )     $constrains .= " AND fecha_inscip	 >= '".$desde_est."' ";

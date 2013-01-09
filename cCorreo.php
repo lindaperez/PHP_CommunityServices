@@ -35,7 +35,7 @@ foreach($files as $fileatt){
 	$email_message = "This is a multi-part message in MIME format.\n\n" . 
 	"--{$mime_boundary}\n" . 
 	"Content-Type:text/html; charset=\"iso-8859-1\"\n" . 
-	"Content-Transfer-Encoding: 7bit\n\n" . 
+	"Content-Transfer-Encoding: 7bit\n\n" ; 
 	$email_message .= "\n\n";
 
 	$data = chunk_split(base64_encode($data));
@@ -52,7 +52,7 @@ foreach($files as $fileatt){
 	$ok = @mail($email_to, $email_subject, $email_message, $headers);
 
 	if($ok) { 
-	echo "You file".$fileatt_name." has been sent
+	echo "You file".$fileatt_name." ".$argv[1]." has been sent
 	to the email address you specified.
 
 	Make sure to check your junk mail!
